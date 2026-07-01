@@ -12,9 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0da49247abc89e4d8800a3e49f249b5, type: 3}
   m_Name: biblioteca_01
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
-  roomID: 
-  backgroundSprite: {fileID: 0}
-  minX: 0
-  maxX: 0
-  spawnPoints: []
-  transitions: []
+  roomID: biblioteca_01
+  backgroundSprite: {fileID: -419148016115861290, guid: 2843acee2514dd34b80db9340848a659, type: 3}
+  minX: -8
+  maxX: 8
+  spawnPoints:
+  - key: vindo_do_corredor
+    xPosition: -7.5
+  - key: vindo_do_corredor
+    xPosition: 7.5
+  transitions:
+  - triggerX: -7.5
+    range: 0.5
+    targetRoomID: corredor_01
+    targetSpawnKey: vindo_da_direita
+    customKey: 32
+    description: 
