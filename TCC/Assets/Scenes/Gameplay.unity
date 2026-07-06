@@ -185,7 +185,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -419148016115861290, guid: 2843acee2514dd34b80db9340848a659, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -193,7 +193,7 @@ SpriteRenderer:
   m_Size: {x: 5.94, y: 3.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &78944147
 Transform:
@@ -661,6 +661,8 @@ MonoBehaviour:
   allRooms:
   - {fileID: 11400000, guid: 56ec85a1522de5f458b150d8db943b05, type: 2}
   - {fileID: 11400000, guid: 23283998a5fbccb46946958064344d31, type: 2}
+  - {fileID: 11400000, guid: c33ce0375b3d9cd46850261232dd025a, type: 2}
+  - {fileID: 11400000, guid: 652c3c68a6e747741a60c06b3d4ab7c8, type: 2}
 --- !u!4 &1676899941
 Transform:
   m_ObjectHideFlags: 0

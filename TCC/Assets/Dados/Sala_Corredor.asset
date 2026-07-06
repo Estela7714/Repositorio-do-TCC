@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: corredor_01
   backgroundSprite: {fileID: -5933715298724706184, guid: c4d72d387d4dc4e48b5be38679d5f703, type: 3}
-  minX: -8
-  maxX: 8
+  minX: -9
+  maxX: 9
   spawnPoints:
   - key: vindo_da_direita
     xPosition: 7.5
   - key: vindo_da_esquerda
     xPosition: -7.5
   transitions:
-  - triggerX: 7.8
+  - triggerX: 8.8
     range: 0.5
     targetRoomID: biblioteca_01
     targetSpawnKey: vindo_do_corredor

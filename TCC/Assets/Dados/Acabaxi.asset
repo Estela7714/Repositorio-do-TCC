@@ -10,27 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0da49247abc89e4d8800a3e49f249b5, type: 3}
-  m_Name: biblioteca_01
+  m_Name: Acabaxi
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
-  roomID: biblioteca_01
-  backgroundSprite: {fileID: -419148016115861290, guid: 2843acee2514dd34b80db9340848a659, type: 3}
+  roomID: acabaxi
+  backgroundSprite: {fileID: 5899847947390980637, guid: 69feda4bb10c9bb4d9b3a1965eaf1af8, type: 3}
   minX: -9
   maxX: 9
   spawnPoints:
-  - key: vindo_do_corredor
-    xPosition: -7.5
-  - key: vindo_da_pousada
-    xPosition: 7.5
+  - key: spawn_1
+    xPosition: -8.5
+  - key: spawn_2
+    xPosition: 8.5
   transitions:
-  - triggerX: -8.5
-    range: 0.5
-    targetRoomID: corredor_01
-    targetSpawnKey: vindo_da_direita
-    customKey: 32
-    description: 
-  - triggerX: 8.5
+  - triggerX: -8.8
     range: 0.5
     targetRoomID: pousada
-    targetSpawnKey: vindo_da_biblioteca
+    targetSpawnKey: vindo_da_pqp
     customKey: 32
     description: 
