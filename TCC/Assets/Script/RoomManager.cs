@@ -8,6 +8,11 @@ public class RoomManager : MonoBehaviour
     [Header("Referências da Cena")]
     [SerializeField] private SpriteRenderer backgroundRenderer;
     [SerializeField] private Transform playerTransform;
+    [SerializeField] private Camera mainCamera; // NOVO: arraste a Main Camera (se vazio, usa Camera.main)
+
+    [Header("Ajuste do Fundo")]
+    [Tooltip("Ligado: preenche a tela toda (pode cortar bordas). Desligado: mostra a imagem inteira (pode sobrar faixa).")]
+    [SerializeField] private bool preencherTela = true;
 
     [Header("Banco de Dados de Salas")]
     [SerializeField] private List<RoomData> allRooms;
@@ -22,6 +27,8 @@ public class RoomManager : MonoBehaviour
         else Destroy(gameObject);
 
         playerMovement = playerTransform.GetComponent<PlayerMovement>();
+
+        if (mainCamera == null) mainCamera = Camera.main;
 
         // Indexa as salas para busca rápida por ID
         foreach (var room in allRooms)
@@ -40,7 +47,6 @@ public class RoomManager : MonoBehaviour
         }
     }
 
-    // Substitua o método Update do seu RoomManager por este:
     private void Update()
     {
         if (currentRoom == null) return;
@@ -72,8 +78,9 @@ public class RoomManager : MonoBehaviour
 
         currentRoom = roomDatabase[roomId];
 
-        // 1. Troca o Cenário Visual (Hot-Swap)
+        // 1. Troca o Cenário Visual (Hot-Swap) e ajusta o tamanho à câmera
         backgroundRenderer.sprite = currentRoom.backgroundSprite;
+        FitBackgroundToCamera();
 
         // 2. Atualiza os limites de movimento do jogador nesta sala
         playerMovement.SetLimits(currentRoom.minX, currentRoom.maxX);
@@ -95,5 +102,30 @@ public class RoomManager : MonoBehaviour
 
         playerTransform.position = new Vector3(spawnX, playerTransform.position.y, playerTransform.position.z);
         playerMovement.StopMovement(); // Para o clique anterior para o player não continuar andando sozinho
+    }
+
+    // Escala e centraliza o sprite de fundo conforme a área visível da câmera
+    private void FitBackgroundToCamera()
+    {
+        Sprite sprite = backgroundRenderer.sprite;
+        if (sprite == null || mainCamera == null) return;
+
+        // Tamanho da área visível da câmera em unidades do mundo
+        float camHeight = mainCamera.orthographicSize * 2f;
+        float camWidth = camHeight * mainCamera.aspect;
+
+        // Tamanho do sprite com escala 1
+        Vector2 spriteSize = sprite.bounds.size;
+
+        float scaleX = camWidth / spriteSize.x;
+        float scaleY = camHeight / spriteSize.y;
+
+        float scale = preencherTela ? Mathf.Max(scaleX, scaleY) : Mathf.Min(scaleX, scaleY);
+
+        backgroundRenderer.transform.localScale = new Vector3(scale, scale, 1f);
+
+        // Centraliza o fundo na câmera
+        Vector3 camPos = mainCamera.transform.position;
+        backgroundRenderer.transform.position = new Vector3(camPos.x, camPos.y, backgroundRenderer.transform.position.z);
     }
 }
