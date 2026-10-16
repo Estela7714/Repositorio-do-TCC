@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Adicionado o namespace novo
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,17 +12,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        // NOVO: não anda enquanto uma mensagem/descrição está na tela
+        if (MensagemUI.Aberta)
+        {
+            horizontalInput = 0f;
+            return;
+        }
+
         horizontalInput = 0f;
 
-        // Verifica se o teclado está conectado
         if (Keyboard.current != null)
         {
-            // Checa botões A ou Seta Esquerda
             if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
             {
                 horizontalInput = -1f;
             }
-            // Checa botões D ou Seta Direita
             else if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
             {
                 horizontalInput = 1f;
