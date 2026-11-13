@@ -60,8 +60,8 @@ public class RoomManager : MonoBehaviour
     {
         if (currentRoom == null) return;
 
-        // NOVO: não troca de sala com mensagem aberta
-        if (MensagemUI.Aberta) return;
+        // Não troca de sala com mensagem ou diálogo aberto
+        if (MensagemUI.Aberta || DialogoManager.Aberto) return;
 
         float playerX = playerTransform.position.x;
 

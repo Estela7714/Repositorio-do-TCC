@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0da49247abc89e4d8800a3e49f249b5, type: 3}
+  m_Name: pousadaFachada
+  m_EditorClassIdentifier: Assembly-CSharp::RoomData
+  roomID: 
+  backgroundSprite: {fileID: -6425848204784938249, guid: b138ea1308107f94ab2d9e3ea526b69a, type: 3}
+  minX: -7.5
+  maxX: 7.5
+  spawnPoints:
+  - key: esquerda
+    xPosition: -6
+  - key: direita
+    xPosition: 6
+  transitions:
+  - triggerX: 9.45
+    range: 1
+    targetRoomID: pousada_recepcao
+    targetSpawnKey: porta_entrada
+    customKey: 0
+    description: 

@@ -12,8 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        // NOVO: não anda enquanto uma mensagem/descrição está na tela
-        if (MensagemUI.Aberta)
+        // Não anda enquanto uma mensagem/descrição ou diálogo está na tela
+        if (MensagemUI.Aberta || DialogoManager.Aberto)
         {
             horizontalInput = 0f;
             return;

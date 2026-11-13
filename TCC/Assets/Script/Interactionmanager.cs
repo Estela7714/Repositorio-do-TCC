@@ -37,6 +37,9 @@ public class InteractionManager : MonoBehaviour
             return;
         }
 
+        // Se há diálogo aberto, o próprio DialogoManager cuida do avanço das falas
+        if (DialogoManager.Aberto) return;
+
         // Ignora cliques em cima de botões/UI (inventário, pause etc.)
         if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
 
@@ -44,10 +47,21 @@ public class InteractionManager : MonoBehaviour
         Collider2D hit = Physics2D.OverlapPoint(mundo, camadaInteragivel);
         if (hit == null) return;
 
+        ItemData selecionado = Inventory.Instance.ItemSelecionado;
+
+        // 1. Verifica se clicou em um NPC
+        NPCInteragivel npc = hit.GetComponentInParent<NPCInteragivel>();
+        if (npc != null)
+        {
+            if (selecionado == null) npc.Conversar();
+            else MensagemUI.Mostrar("Não preciso usar isso nele.");
+            return;
+        }
+
+        // 2. Verifica se clicou em um Objeto normal
         ObjetoInteragivel objeto = hit.GetComponentInParent<ObjetoInteragivel>();
         if (objeto == null) return;
 
-        ItemData selecionado = Inventory.Instance.ItemSelecionado;
         if (selecionado != null) objeto.UsarItem(selecionado);
         else objeto.Interagir();
     }
