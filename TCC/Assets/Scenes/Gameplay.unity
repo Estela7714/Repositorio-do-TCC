@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 78944147}
   - component: {fileID: 78944146}
   m_Layer: 0
-  m_Name: noir_0
+  m_Name: Backgroud renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
