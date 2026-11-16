@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0da49247abc89e4d8800a3e49f249b5, type: 3}
   m_Name: pousadaFachada
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
-  roomID: 
+  roomID: pousadaFachada
   backgroundSprite: {fileID: -6425848204784938249, guid: b138ea1308107f94ab2d9e3ea526b69a, type: 3}
   minX: -7.5
   maxX: 7.5
@@ -22,8 +22,14 @@ MonoBehaviour:
   - key: direita
     xPosition: 6
   transitions:
-  - triggerX: 9.45
-    range: 1
+  - triggerX: -6.5
+    range: 1.5
+    targetRoomID: entrada_cidade
+    targetSpawnKey: direita
+    customKey: 0
+    description: 
+  - triggerX: -0.2
+    range: 1.5
     targetRoomID: pousada_recepcao
     targetSpawnKey: porta_entrada
     customKey: 0

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0da49247abc89e4d8800a3e49f249b5, type: 3}
   m_Name: entrada_cidade
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
-  roomID: 
-  backgroundSprite: {fileID: 0}
+  roomID: entrada_cidade
+  backgroundSprite: {fileID: -419148016115861290, guid: 2843acee2514dd34b80db9340848a659, type: 3}
   minX: -7.5
   maxX: 7.5
   spawnPoints:
@@ -21,4 +21,10 @@ MonoBehaviour:
     xPosition: -6
   - key: direita
     xPosition: 6
-  transitions: []
+  transitions:
+  - triggerX: 6.5
+    range: 1.5
+    targetRoomID: pousadaFachada
+    targetSpawnKey: esquerda
+    customKey: 0
+    description: 
