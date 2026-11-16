@@ -16,6 +16,9 @@ MonoBehaviour:
   backgroundSprite: {fileID: -419148016115861290, guid: 2843acee2514dd34b80db9340848a659, type: 3}
   minX: -7.5
   maxX: 7.5
+  playerScale: 0.5
+  usarCustomY: 0
+  playerY: -1.9
   spawnPoints:
   - key: esquerda
     xPosition: -6
@@ -26,5 +29,17 @@ MonoBehaviour:
     range: 1.5
     targetRoomID: pousadaFachada
     targetSpawnKey: esquerda
+    customKey: 0
+    description: 
+  - triggerX: -6.5
+    range: 1.5
+    targetRoomID: praca_central
+    targetSpawnKey: direita
+    customKey: 0
+    description: 
+  - triggerX: 0
+    range: 1.5
+    targetRoomID: beco_escuro
+    targetSpawnKey: saida_cidade
     customKey: 0
     description: 

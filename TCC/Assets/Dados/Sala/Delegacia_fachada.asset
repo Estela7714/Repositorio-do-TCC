@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0da49247abc89e4d8800a3e49f249b5, type: 3}
+  m_Name: Delegacia_fachada
+  m_EditorClassIdentifier: Assembly-CSharp::RoomData
+  roomID: delegacia_fachada
+  backgroundSprite: {fileID: -5933715298724706184, guid: c4d72d387d4dc4e48b5be38679d5f703, type: 3}
+  minX: -7.5
+  maxX: 7.5
+  playerScale: 1
+  usarCustomY: 0
+  playerY: -2.5
+  spawnPoints:
+  - key: esquerda
+    xPosition: -6
+  - key: porta_delegacia
+    xPosition: 5.5
+  transitions:
+  - triggerX: -6.5
+    range: 1.5
+    targetRoomID: rua_lojas
+    targetSpawnKey: direita
+    customKey: 0
+    description: 
+  - triggerX: 5.5
+    range: 1.5
+    targetRoomID: delegacia_recepcao
+    targetSpawnKey: porta_entrada
+    customKey: 0
+    description: 

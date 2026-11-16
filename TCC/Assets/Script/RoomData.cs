@@ -29,6 +29,13 @@ public class RoomData : ScriptableObject
     public float minX;
     public float maxX;
 
+    [Header("Ajuste do Player nesta Sala")]
+    [Tooltip("Escala do personagem nesta sala (1 = normal, 0.7 = menor, 1.3 = maior)")]
+    public float playerScale = 1f;
+    [Tooltip("Marque se precisar ajustar a altura (Y) dos pés do personagem nesta sala")]
+    public bool usarCustomY = false;
+    public float playerY = -2.5f;
+
     [Header("Pontos de Entrada (Spawn)")]
     public List<SpawnPoint> spawnPoints;
 

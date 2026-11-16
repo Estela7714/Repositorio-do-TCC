@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// NOVO: liga o ID de uma sala ao objeto da cena que guarda os interagíveis dela
+// Liga o ID de uma sala ao objeto da cena que guarda os interagíveis dela
 [System.Serializable]
 public class SalaObjetos
 {
@@ -31,6 +31,7 @@ public class RoomManager : MonoBehaviour
     private Dictionary<string, RoomData> roomDatabase = new Dictionary<string, RoomData>();
     private RoomData currentRoom;
     private PlayerMovement playerMovement;
+    private float defaultPlayerY;
 
     private void Awake()
     {
@@ -38,6 +39,7 @@ public class RoomManager : MonoBehaviour
         else Destroy(gameObject);
 
         playerMovement = playerTransform.GetComponent<PlayerMovement>();
+        defaultPlayerY = playerTransform.position.y;
 
         if (mainCamera == null) mainCamera = Camera.main;
 
@@ -93,7 +95,7 @@ public class RoomManager : MonoBehaviour
         backgroundRenderer.sprite = currentRoom.backgroundSprite;
         FitBackgroundToCamera();
 
-        // 1.1 NOVO: ativa só os objetos interagíveis da sala atual
+        // 1.1 Ativa só os objetos interagíveis da sala atual
         AtualizarObjetosDaSala(roomId);
 
         // 2. Limites de movimento
@@ -114,11 +116,17 @@ public class RoomManager : MonoBehaviour
 
         if (!foundSpawn) Debug.LogWarning($"SpawnPoint '{spawnKey}' não encontrado na sala {roomId}. Usando X zero.");
 
-        playerTransform.position = new Vector3(spawnX, playerTransform.position.y, playerTransform.position.z);
+        // 4. Ajuste de Escala e Altura (Y) por Sala
+        float escala = currentRoom.playerScale > 0f ? currentRoom.playerScale : 1f;
+        float direcaoX = Mathf.Sign(playerTransform.localScale.x);
+        if (direcaoX == 0f) direcaoX = 1f;
+        playerTransform.localScale = new Vector3(escala * direcaoX, escala, 1f);
+
+        float targetY = currentRoom.usarCustomY ? currentRoom.playerY : defaultPlayerY;
+        playerTransform.position = new Vector3(spawnX, targetY, playerTransform.position.z);
         playerMovement.StopMovement();
     }
 
-    // NOVO
     private void AtualizarObjetosDaSala(string roomId)
     {
         foreach (var sala in objetosDasSalas)
