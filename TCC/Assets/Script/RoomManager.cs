@@ -74,6 +74,12 @@ public class RoomManager : MonoBehaviour
                 if (UnityEngine.InputSystem.Keyboard.current != null &&
                     UnityEngine.InputSystem.Keyboard.current.spaceKey.wasPressedThisFrame)
                 {
+                    if (MansaoStateManager.Instance != null &&
+                        MansaoStateManager.Instance.EstaBloqueadoNaPortaPrincipal(currentRoom.roomID, playerX))
+                    {
+                        break;
+                    }
+
                     LoadRoom(transition.targetRoomID, transition.targetSpawnKey);
                     break;
                 }

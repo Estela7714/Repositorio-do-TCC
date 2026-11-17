@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0da49247abc89e4d8800a3e49f249b5, type: 3}
+  m_Name: Mansao_corredor_relogio
+  m_EditorClassIdentifier: Assembly-CSharp::RoomData
+  roomID: mansao_corredor_relogio
+  backgroundSprite: {fileID: -4009839269998335011, guid: 691ef54f713c505469c63fcdfe9e1d81, type: 3}
+  minX: -7.5
+  maxX: 7.5
+  playerScale: 1
+  usarCustomY: 0
+  playerY: -2.5
+  spawnPoints:
+  - key: escada_salao
+    xPosition: -5.2
+  - key: porta_duque
+    xPosition: -5.5
+  - key: direita
+    xPosition: 6
+  transitions:
+  - triggerX: -7.3
+    range: 0.6
+    targetRoomID: mansao_salao
+    targetSpawnKey: escada_cima
+    customKey: 0
+    description: 
+  - triggerX: -5.2
+    range: 1
+    targetRoomID: mansao_quarto_duque
+    targetSpawnKey: porta_corredor
+    customKey: 0
+    description: 
+  - triggerX: 6.5
+    range: 1.5
+    targetRoomID: mansao_corredor_quadros
+    targetSpawnKey: esquerda
+    customKey: 0
+    description: 

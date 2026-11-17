@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mansao_fachada
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: mansao_fachada
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 2212027345903840621, guid: 2d7534026ccce544a8fee57e0484a0d8, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1
@@ -29,5 +29,11 @@ MonoBehaviour:
     range: 1.5
     targetRoomID: praca_central
     targetSpawnKey: esquerda
+    customKey: 0
+    description: 
+  - triggerX: 0
+    range: 1.5
+    targetRoomID: mansao_porta_frente
+    targetSpawnKey: vindo_portao
     customKey: 0
     description: 

@@ -19,5 +19,21 @@ MonoBehaviour:
   playerScale: 1
   usarCustomY: 0
   playerY: -2.5
-  spawnPoints: []
-  transitions: []
+  spawnPoints:
+  - key: vindo_portao
+    xPosition: 0
+  - key: saindo_mansao
+    xPosition: 0
+  transitions:
+  - triggerX: 6.5
+    range: 1.5
+    targetRoomID: mansao_fachada
+    targetSpawnKey: porta_mansao
+    customKey: 0
+    description: 
+  - triggerX: 0
+    range: 1.5
+    targetRoomID: mansao_salao
+    targetSpawnKey: porta_entrada
+    customKey: 0
+    description: 
