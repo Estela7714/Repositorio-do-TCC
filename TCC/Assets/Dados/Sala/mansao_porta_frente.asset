@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0da49247abc89e4d8800a3e49f249b5, type: 3}
+  m_Name: mansao_porta_frente
+  m_EditorClassIdentifier: Assembly-CSharp::RoomData
+  roomID: mansao_porta_frente
+  backgroundSprite: {fileID: 0}
+  minX: -7.5
+  maxX: 7.5
+  playerScale: 1
+  usarCustomY: 0
+  playerY: -2.5
+  spawnPoints:
+  - key: vindo_portao
+    xPosition: 0
+  - key: saindo_mansao
+    xPosition: 0
+  transitions:
+  - triggerX: 6.5
+    range: 1.5
+    targetRoomID: mansao_fachada
+    targetSpawnKey: porta_mansao
+    customKey: 0
+    description: 
+  - triggerX: 0
+    range: 1.5
+    targetRoomID: mansao_salao
+    targetSpawnKey: porta_entrada
+    customKey: 0
+    description: 

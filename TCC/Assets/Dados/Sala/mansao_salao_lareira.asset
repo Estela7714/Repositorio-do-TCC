@@ -14,7 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: mansao_salao_lareira
   backgroundSprite: {fileID: 0}
-  minX: 0
-  maxX: 0
-  spawnPoints: []
-  transitions: []
+  minX: -7.5
+  maxX: 7.5
+  playerScale: 1
+  usarCustomY: 0
+  playerY: -2.5
+  spawnPoints:
+  - key: direita
+    xPosition: 6
+  transitions:
+  - triggerX: 6.5
+    range: 1.5
+    targetRoomID: mansao_salao
+    targetSpawnKey: esquerda
+    customKey: 0
+    description: 
