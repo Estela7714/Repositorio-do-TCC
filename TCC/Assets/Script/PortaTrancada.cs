@@ -5,16 +5,17 @@ public class PortaTrancada : MonoBehaviour
 {
     [Header("Estado da Porta")]
     public bool estaTrancada = true;
-    [Tooltip("ID exato do item necessário (o mesmo campo 'itemID' do ScriptableObject ItemData)")]
+    [Tooltip("ID exato do item necessário (deixe vazio se a porta abrir por enigma/cadeado)")]
     public string itemNecessarioID = "chave_mansao";
     [Tooltip("Se marcado, o jogador precisa clicar no item no inventário antes de clicar na porta")]
     public bool exigirItemSelecionado = false;
 
     [Header("Mensagens")]
-    [TextArea] public string mensagemTrancada = "Está trancada. Preciso da chave certa.";
+    [TextArea] public string mensagemTrancada = "Está trancada.";
     [TextArea] public string mensagemDestrancou = "Você destrancou a passagem!";
 
     [Header("Ações")]
+    public UnityEvent onInteragirTrancada;
     public UnityEvent onDestrancar;
     [Tooltip("Executado sempre que clicar na porta depois que ela já estiver destrancada")]
     public UnityEvent onInteragirDestrancada;
@@ -24,8 +25,6 @@ public class PortaTrancada : MonoBehaviour
         if (DialogoManager.Aberto) return;
         if (MensagemUI.Aberta) return;
 
-        // Se já está destrancada, executa o evento contínuo (se existir) 
-        // e não bloqueia o outro script de Data Room que está no mesmo objeto.
         if (!estaTrancada)
         {
             onInteragirDestrancada?.Invoke();
@@ -38,7 +37,10 @@ public class PortaTrancada : MonoBehaviour
         }
         else
         {
-            MensagemUI.Mostrar(mensagemTrancada);
+            if (!string.IsNullOrEmpty(mensagemTrancada))
+                MensagemUI.Mostrar(mensagemTrancada);
+
+            onInteragirTrancada?.Invoke();
         }
     }
 
