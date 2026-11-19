@@ -166,4 +166,8 @@ public class RoomManager : MonoBehaviour
     {
         LoadRoom("mansao_porta_frente", "vindo_portao");
     }
+    public void EntrarEscritorioDuque()
+    {
+        LoadRoom("mansao_escritorio_duque", "esquerda");
+    }
 }

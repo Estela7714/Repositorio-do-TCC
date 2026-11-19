@@ -34,9 +34,21 @@ public class ObjetoInteragivel : MonoBehaviour
     [Tooltip("Ex: ativar um objeto escondido, abrir passagem, liberar pista...")]
     [SerializeField] private UnityEvent aoUsarItemCorreto;
 
+    [Header("Trava / Pré-requisito (Opcional)")]
+    [Tooltip("Se preenchido, o item só funcionará aqui DEPOIS que este outro ObjetoInteragivel já tiver sido usado.")]
+    [SerializeField] private ObjetoInteragivel objetoPreRequisito;
+    [TextArea(2, 5)][SerializeField] private string textoPreRequisitoNaoCumprido = "Ainda não faz sentido usar isso aqui. Preciso investigar outro lugar primeiro.";
+
     private bool jaUsado;
+    private static int ultimoFrameDeUso = -1; // Garante que apenas 1 objeto seja acionado por clique
 
     public string NomeObjeto => nomeObjeto;
+    public bool JaUsado => jaUsado;
+
+    public void DefinirTipo(TipoInteracao novoTipo)
+    {
+        tipo = novoTipo;
+    }
 
     // Clique com a "mão vazia"
     public void Interagir()
@@ -70,14 +82,34 @@ public class ObjetoInteragivel : MonoBehaviour
     {
         if (item == null) return;
 
+        // Trava de frame: se outro objeto já processou o clique neste exato frame, ignora este
+        if (ultimoFrameDeUso == Time.frameCount) return;
+
         if (usoUnico && jaUsado)
         {
+            ultimoFrameDeUso = Time.frameCount;
             MensagemUI.Mostrar(string.IsNullOrWhiteSpace(textoDepoisDeUsado) ? textoExaminar : textoDepoisDeUsado);
+            return;
+        }
+
+        // Prioridade: se este objeto exige um pré-requisito (ex: Lareira) que ainda não ocorreu
+        if (objetoPreRequisito != null && !objetoPreRequisito.JaUsado)
+        {
+            // Se o pré-requisito aceita o mesmo item (ex: Lente), redireciona o clique diretamente para ele
+            if (objetoPreRequisito.itemNecessario != null && item.itemID == objetoPreRequisito.itemNecessario.itemID)
+            {
+                objetoPreRequisito.UsarItem(item);
+                return;
+            }
+
+            ultimoFrameDeUso = Time.frameCount;
+            MensagemUI.Mostrar(textoPreRequisitoNaoCumprido);
             return;
         }
 
         if (itemNecessario != null && item.itemID == itemNecessario.itemID)
         {
+            ultimoFrameDeUso = Time.frameCount; // Trava este frame para nenhum outro objeto disparar junto
             jaUsado = true;
             MensagemUI.Mostrar(textoItemCorreto);
 
@@ -88,6 +120,7 @@ public class ObjetoInteragivel : MonoBehaviour
         }
         else
         {
+            ultimoFrameDeUso = Time.frameCount;
             MensagemUI.Mostrar(textoItemErrado);
         }
     }

@@ -80,6 +80,6 @@ public class GameStateManager : MonoBehaviour
 
     private void MostrarAviso(string texto)
     {
-       
+        MensagemUI.Mostrar(texto);
     }
 }

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemID: amuleto_cranio
   nomeItem: amuleto_cranio
-  icone: {fileID: 0}
+  icone: {fileID: -8085529539319956111, guid: 0cf97c67abdf73142900cf12698854e6, type: 3}
   descricao: 
