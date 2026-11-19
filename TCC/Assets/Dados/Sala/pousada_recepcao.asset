@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: pousada_recepcao
   backgroundSprite: {fileID: -1049702319622250077, guid: 2ac5f2503bfc43f498c028af78a67c18, type: 3}
-  minX: -7.5
-  maxX: 7.5
+  minX: -8.5
+  maxX: 8.5
   playerScale: 0.9
   usarCustomY: 0
   playerY: -0.88

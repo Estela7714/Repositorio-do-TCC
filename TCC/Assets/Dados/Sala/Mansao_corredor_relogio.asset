@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: mansao_corredor_relogio
   backgroundSprite: {fileID: -4009839269998335011, guid: 691ef54f713c505469c63fcdfe9e1d81, type: 3}
-  minX: -7.5
-  maxX: 7.5
+  minX: -8.5
+  maxX: 8.5
   playerScale: 1
   usarCustomY: 0
   playerY: -2.5

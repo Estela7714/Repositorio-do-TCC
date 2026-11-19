@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: rua_lojas
   backgroundSprite: {fileID: -1723029536247211246, guid: 4119dabd362683e4dbdb45d89bbe003f, type: 3}
-  minX: -7.5
-  maxX: 7.5
+  minX: -8.5
+  maxX: 8.5
   playerScale: 1
   usarCustomY: 0
   playerY: -2.5
