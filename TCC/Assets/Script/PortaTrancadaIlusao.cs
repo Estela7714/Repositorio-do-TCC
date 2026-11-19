@@ -3,8 +3,7 @@ using UnityEngine;
 public class PortaTrancadaIlusao : MonoBehaviour
 {
     [Header("Configuração")]
-    [TextArea]
-    public string mensagemTrancada = "A porta bateu com força e trancou por fora! Não há como sair agora.";
+    [SerializeField] private LinhaDialogo[] falasTrancada;
     public KeyCode teclaInteracao = KeyCode.Space;
 
     private bool jogadorPerto = false;
@@ -43,12 +42,15 @@ public class PortaTrancadaIlusao : MonoBehaviour
 
     private void Update()
     {
+        if (DialogoManager.Aberto || MensagemUI.Aberta) return;
+
         // Intercepta a tecla antes que o RoomManager troque de sala
         if (jogadorPerto && Input.GetKeyDown(teclaInteracao))
         {
-            Debug.Log(mensagemTrancada);
-            // AQUI: Chame o seu sistema de diálogo para mostrar 'mensagemTrancada' na tela!
-            // Exemplo: DialogueManager.Instance.MostrarMensagem(mensagemTrancada);
+            if (DialogoManager.Instance != null && falasTrancada != null && falasTrancada.Length > 0)
+            {
+                DialogoManager.Instance.IniciarDialogo(falasTrancada);
+            }
         }
     }
 

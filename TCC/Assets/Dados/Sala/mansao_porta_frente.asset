@@ -25,7 +25,7 @@ MonoBehaviour:
   - key: saindo_mansao
     xPosition: 0
   transitions:
-  - triggerX: 6.5
+  - triggerX: 7.5
     range: 1.5
     targetRoomID: mansao_fachada
     targetSpawnKey: porta_mansao

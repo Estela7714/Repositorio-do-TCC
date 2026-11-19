@@ -18,20 +18,20 @@ MonoBehaviour:
   maxX: 8.5
   playerScale: 0.3453694
   usarCustomY: 0
-  playerY: -1.78
+  playerY: -2.45
   spawnPoints:
   - key: esquerda
     xPosition: -6
   - key: direita
     xPosition: 6
   transitions:
-  - triggerX: 6.5
+  - triggerX: 7.5
     range: 1.5
     targetRoomID: pousadaFachada
     targetSpawnKey: esquerda
     customKey: 0
     description: 
-  - triggerX: -6.5
+  - triggerX: -8.5
     range: 1.5
     targetRoomID: praca_central
     targetSpawnKey: direita

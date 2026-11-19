@@ -23,13 +23,13 @@ MonoBehaviour:
   - key: esquerda
     xPosition: -6
   transitions:
-  - triggerX: -6.5
+  - triggerX: -7.5
     range: 1.5
     targetRoomID: pousadaFachada
     targetSpawnKey: direita
     customKey: 0
     description: 
-  - triggerX: 6.5
+  - triggerX: 7.5
     range: 1.5
     targetRoomID: delegacia_fachada
     targetSpawnKey: esquerda

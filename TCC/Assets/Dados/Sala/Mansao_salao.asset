@@ -15,7 +15,7 @@ MonoBehaviour:
   roomID: mansao_salao
   backgroundSprite: {fileID: 1085864138486324790, guid: 1feaf3d753527bb4a91a1665719d1b48, type: 3}
   minX: -8.5
-  maxX: 8.5
+  maxX: 7.5
   playerScale: 1
   usarCustomY: 0
   playerY: -2.5
@@ -31,13 +31,13 @@ MonoBehaviour:
     targetSpawnKey: escada_salao
     customKey: 0
     description: 
-  - triggerX: -6.5
+  - triggerX: -7.5
     range: 1.5
     targetRoomID: mansao_salao_lareira
     targetSpawnKey: direita
     customKey: 0
     description: 
-  - triggerX: 6.5
+  - triggerX: 7.5
     range: 1.5
     targetRoomID: mansao_porta_frente
     targetSpawnKey: saindo_mansao

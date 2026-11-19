@@ -29,7 +29,7 @@ MonoBehaviour:
   - key: porta_para_dentro
     xPosition: 0
   transitions:
-  - triggerX: 6.5
+  - triggerX: 7.5
     range: 1.5
     targetRoomID: pousadaFachada
     targetSpawnKey: meio
@@ -41,7 +41,7 @@ MonoBehaviour:
     targetSpawnKey: porta_recepcao
     customKey: 0
     description: 
-  - triggerX: -6.5
+  - triggerX: -7.5
     range: 1.5
     targetRoomID: pousada_refeitorio
     targetSpawnKey: porta_recepcao

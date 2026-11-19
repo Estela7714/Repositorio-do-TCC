@@ -25,7 +25,7 @@ MonoBehaviour:
   - key: porta_mansao
     xPosition: 0
   transitions:
-  - triggerX: 6.5
+  - triggerX: 7.5
     range: 1.5
     targetRoomID: praca_central
     targetSpawnKey: esquerda

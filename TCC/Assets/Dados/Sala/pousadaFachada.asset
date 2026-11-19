@@ -25,7 +25,7 @@ MonoBehaviour:
   - key: direita
     xPosition: 6
   transitions:
-  - triggerX: -6.5
+  - triggerX: -7.5
     range: 1.5
     targetRoomID: entrada_cidade
     targetSpawnKey: direita
@@ -37,7 +37,7 @@ MonoBehaviour:
     targetSpawnKey: porta_entrada
     customKey: 0
     description: 
-  - triggerX: 6.5
+  - triggerX: 7.5
     range: 1.5
     targetRoomID: rua_lojas
     targetSpawnKey: esquerda

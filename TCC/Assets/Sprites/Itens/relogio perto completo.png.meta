@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 920694a3385da7e43a765b4cd9b84160
+guid: d46dea65ea58ac84f80ca4ed9767a2e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5750110627559200340
-    second: 1794922762681_0
+      213: 8017976762275071790
+    second: relogio perto completo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1794922762681_0
+      name: relogio perto completo_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 61
         y: 0
-        width: 1264
-        height: 848
+        width: 255
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4565dde762f7ccf40800000000000000
-      internalID: 5750110627559200340
+      spriteID: e270ebc5263954f60800000000000000
+      internalID: 8017976762275071790
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1794922762681_0: 5750110627559200340
+      relogio perto completo_0: 8017976762275071790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4e788a1fc25bfff429c458f6f7dec193
+guid: 50a2c48e53e4a5d43bb333eec805b1a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1472217993343923144
-    second: "32 Sem T\xEDtulo_20261118110724_0"
+      213: 7344031574772027210
+    second: quadro normal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "32 Sem T\xEDtulo_20261118110724_0"
+      name: quadro normal_0
       rect:
         serializedVersion: 2
-        x: 705
-        y: 278
-        width: 165
-        height: 283
+        x: 37
+        y: 41
+        width: 752
+        height: 749
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c3f33df67e5e6410800000000000000
-      internalID: 1472217993343923144
+      spriteID: a4f0a819ecd3be560800000000000000
+      internalID: 7344031574772027210
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "32 Sem T\xEDtulo_20261118110724_0": 1472217993343923144
+      quadro normal_0: 7344031574772027210
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
