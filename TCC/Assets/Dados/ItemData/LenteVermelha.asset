@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemID: LenteVermelha
   nomeItem: Lente Vermelha
-  icone: {fileID: 0}
+  icone: {fileID: -1709873420313100864, guid: d84c2939451994747a03025475cc87da, type: 3}
   descricao: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mansao_capela_subterranea
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: mansao_capela
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 5414865023195059355, guid: 889fa5f54d2cae84984f167f70a812c0, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 444b2213ec786f44b96aa08268bc8a1f
+guid: 7d1c2bfb0d8d23747b52a8ef33a1428b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4348193631249447212
-    second: "7 Sem T\xEDtulo_20261113083312_0"
+      213: 1341809024856494772
+    second: _s08ewzs08ewzs08e_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "7 Sem T\xEDtulo_20261113083312_0"
+      name: _s08ewzs08ewzs08e_0
       rect:
         serializedVersion: 2
-        x: 178
-        y: 42
-        width: 498
-        height: 1095
+        x: 0
+        y: 0
+        width: 1376
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d6c2ca1eec18a3c0800000000000000
-      internalID: -4348193631249447212
+      spriteID: 4b21cfae2301f9210800000000000000
+      internalID: 1341809024856494772
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "7 Sem T\xEDtulo_20261113083312_0": -4348193631249447212
+      _s08ewzs08ewzs08e_0: 1341809024856494772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

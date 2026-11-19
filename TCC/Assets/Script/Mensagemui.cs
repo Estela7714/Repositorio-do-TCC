@@ -1,33 +1,37 @@
-using TMPro;
 using UnityEngine;
 
-// Caixa de texto usada para descrições e informações.
-// IMPORTANTE: coloque este script em um objeto que NÃO seja o próprio painel
-// (ex: no Canvas), pois o painel é desativado.
+// Redireciona todas as mensagens de examinar, coletar e avisos
+// para a caixa principal do DialogoManager (com efeito de digitação).
 public class MensagemUI : MonoBehaviour
 {
-    public static MensagemUI Instance { get; private set; }
+    public static bool Aberta => DialogoManager.Aberto;
 
-    [SerializeField] private GameObject painel;
-    [SerializeField] private TextMeshProUGUI texto;
-
-    public static bool Aberta => Instance != null && Instance.painel != null && Instance.painel.activeSelf;
-
-    private void Awake()
+    public static void Mostrar(string mensagem, string titulo = "")
     {
-        Instance = this;
-        painel.SetActive(false);
-    }
+        if (string.IsNullOrWhiteSpace(mensagem)) return;
 
-    public static void Mostrar(string mensagem)
-    {
-        if (Instance == null || string.IsNullOrWhiteSpace(mensagem)) return;
-        Instance.texto.text = mensagem;
-        Instance.painel.SetActive(true);
+        if (DialogoManager.Instance != null)
+        {
+            LinhaDialogo[] linhaUnica = new LinhaDialogo[]
+            {
+                new LinhaDialogo
+                {
+                    nomeFalante = titulo,
+                    retrato = null,
+                    fala = mensagem
+                }
+            };
+
+            DialogoManager.Instance.IniciarDialogo(linhaUnica);
+        }
+        else
+        {
+            Debug.LogWarning("DialogoManager.Instance não encontrado na cena para exibir: " + mensagem);
+        }
     }
 
     public static void Fechar()
     {
-        if (Instance != null) Instance.painel.SetActive(false);
+        // O próprio DialogoManager fecha a caixa ao terminar a leitura
     }
 }

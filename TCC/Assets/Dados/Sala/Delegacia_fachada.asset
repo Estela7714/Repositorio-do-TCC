@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Delegacia_fachada
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: delegacia_fachada
-  backgroundSprite: {fileID: -5933715298724706184, guid: c4d72d387d4dc4e48b5be38679d5f703, type: 3}
+  backgroundSprite: {fileID: 7616651063487985539, guid: acfb6d54bfb83f845ba056c1b502cca1, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1

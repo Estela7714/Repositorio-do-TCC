@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: delegacia_recepcao
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: delegacia_recepcao
-  backgroundSprite: {fileID: 5899847947390980637, guid: 69feda4bb10c9bb4d9b3a1965eaf1af8, type: 3}
+  backgroundSprite: {fileID: 7168135921671739825, guid: e40ccb9cc69f3ce40b43a6ea2fc2cfa6, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1

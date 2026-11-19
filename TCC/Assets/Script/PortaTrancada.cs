@@ -14,17 +14,21 @@ public class PortaTrancada : MonoBehaviour
     [TextArea] public string mensagemTrancada = "Está trancada. Preciso da chave certa.";
     [TextArea] public string mensagemDestrancou = "Você destrancou a passagem!";
 
-    [Header("Ações ao Destrancar")]
+    [Header("Ações")]
     public UnityEvent onDestrancar;
+    [Tooltip("Executado sempre que clicar na porta depois que ela já estiver destrancada")]
+    public UnityEvent onInteragirDestrancada;
 
     private void OnMouseDown()
     {
         if (DialogoManager.Aberto) return;
         if (MensagemUI.Aberta) return;
 
+        // Se já está destrancada, executa o evento contínuo (se existir) 
+        // e não bloqueia o outro script de Data Room que está no mesmo objeto.
         if (!estaTrancada)
         {
-            MensagemUI.Mostrar("A passagem já está destrancada.");
+            onInteragirDestrancada?.Invoke();
             return;
         }
 

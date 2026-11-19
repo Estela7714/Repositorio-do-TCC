@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: praca_central
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: praca_central
-  backgroundSprite: {fileID: -7429067456276559415, guid: c3ddaacb528b02b4eb8a850f8d7e96e4, type: 3}
+  backgroundSprite: {fileID: 4746228325594472806, guid: d41c1c3de5d71e045a7a0f2d49bdc0f3, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1

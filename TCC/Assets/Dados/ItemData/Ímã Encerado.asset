@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a672e66197d76d3488f5d8b5954aeb4a, type: 3}
   m_Name: "\xCDm\xE3 Encerado"
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemID: 
+  itemID: "\xCDm\xE3 Encerado"
   nomeItem: "\xCDm\xE3 Encerado"
-  icone: {fileID: 0}
+  icone: {fileID: 1747103031772840918, guid: 11050bf458a706e499302febfdcef199, type: 3}
   descricao: 

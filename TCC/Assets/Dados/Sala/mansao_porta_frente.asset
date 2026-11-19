@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mansao_porta_frente
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: mansao_porta_frente
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 4010616195003162711, guid: 73efa425c619e91479486de54b0cbcba, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1

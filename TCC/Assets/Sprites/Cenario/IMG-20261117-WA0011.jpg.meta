@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ecace3310c32d664a8aaf5f7b5d6473c
+guid: 73efa425c619e91479486de54b0cbcba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2814000110755807729
-    second: "18 Sem T\xEDtulo_202611180611292_0"
+      213: 4010616195003162711
+    second: IMG-20261117-WA0011_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "18 Sem T\xEDtulo_202611180611292_0"
+      name: IMG-20261117-WA0011_0
       rect:
         serializedVersion: 2
-        x: 132
-        y: 931
-        width: 409
-        height: 575
+        x: 0
+        y: 0
+        width: 1408
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f1828701365d0720800000000000000
-      internalID: 2814000110755807729
+      spriteID: 750a7912e2298a730800000000000000
+      internalID: 4010616195003162711
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "18 Sem T\xEDtulo_202611180611292_0": 2814000110755807729
+      IMG-20261117-WA0011_0: 4010616195003162711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

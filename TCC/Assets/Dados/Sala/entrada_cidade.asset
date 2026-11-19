@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: entrada_cidade
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: entrada_cidade
-  backgroundSprite: {fileID: -419148016115861290, guid: 2843acee2514dd34b80db9340848a659, type: 3}
+  backgroundSprite: {fileID: -8553443886197931649, guid: 2d6438b4f0ae6c94fae1fa1fe2c2f6f6, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 0.5

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: beco_escuro
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: beco_escuro
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 3412988804798542454, guid: f11356473407f694193b7f77f965dea7, type: 3}
   minX: -8.5
   maxX: 8.5
   playerScale: 1

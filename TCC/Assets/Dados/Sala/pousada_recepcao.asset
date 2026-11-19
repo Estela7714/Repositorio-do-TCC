@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pousada_recepcao
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: pousada_recepcao
-  backgroundSprite: {fileID: 3860451824722216007, guid: 6b0364977dd1e89448bea58a9cecfff3, type: 3}
+  backgroundSprite: {fileID: -1049702319622250077, guid: 2ac5f2503bfc43f498c028af78a67c18, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 0.9
@@ -26,6 +26,8 @@ MonoBehaviour:
     xPosition: 6
   - key: meio
     xPosition: -5
+  - key: porta_para_dentro
+    xPosition: 0
   transitions:
   - triggerX: 6.5
     range: 1.5

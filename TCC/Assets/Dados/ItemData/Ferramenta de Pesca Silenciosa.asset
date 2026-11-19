@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a672e66197d76d3488f5d8b5954aeb4a, type: 3}
   m_Name: Ferramenta de Pesca Silenciosa
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemID: 
+  itemID: Ferramenta de Pesca Silenciosa
   nomeItem: Ferramenta de Pesca Silenciosa
-  icone: {fileID: 0}
+  icone: {fileID: -8497546989449721307, guid: 863556d92b8a7ed459c6a7b6f82eecb7, type: 3}
   descricao: 

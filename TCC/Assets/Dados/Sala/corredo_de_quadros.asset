@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: corredo_de_quadros
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: mansao_corredor_quadros
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 4060970844835920291, guid: 2259a74cdb973d64b8c20126cc9bca29, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1

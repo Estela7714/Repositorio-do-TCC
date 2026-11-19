@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemID: PonteiroRelogio
   nomeItem: Ponteiro Relogio
-  icone: {fileID: 0}
+  icone: {fileID: -1500950956599241295, guid: 275d7d82e8b02d4499732f6eb445eea7, type: 3}
   descricao: 

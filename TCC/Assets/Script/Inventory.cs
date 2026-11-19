@@ -30,7 +30,7 @@ public class Inventory : MonoBehaviour
     public void Adicionar(ItemData item)
     {
         if (item == null || Possui(item.itemID)) return;
-        itens.Add(item);
+        itens.Insert(0, item); // Insere no início (mais recente primeiro)
         OnInventarioMudou?.Invoke();
     }
 
@@ -90,7 +90,7 @@ public class Inventory : MonoBehaviour
                 // Adiciona o novo item criado (e já deixa ele selecionado para facilitar o uso)
                 if (receita.itemResultado != null && !Possui(receita.itemResultado.itemID))
                 {
-                    itens.Add(receita.itemResultado);
+                    itens.Insert(0, receita.itemResultado); // Item criado fica em primeiro
                     ItemSelecionado = receita.itemResultado;
                 }
 
@@ -102,6 +102,8 @@ public class Inventory : MonoBehaviour
                 OnInventarioMudou?.Invoke();
                 OnSelecaoMudou?.Invoke();
                 return true;
+               
+               
             }
         }
 

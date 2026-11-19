@@ -31,9 +31,3 @@ MonoBehaviour:
     targetSpawnKey: esquerda
     customKey: 0
     description: 
-  - triggerX: 0
-    range: 1.5
-    targetRoomID: mansao_porta_frente
-    targetSpawnKey: vindo_portao
-    customKey: 0
-    description: 

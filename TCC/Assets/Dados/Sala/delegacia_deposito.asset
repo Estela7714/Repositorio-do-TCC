@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: delegacia_deposito
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: delegacia_deposito
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: -7562306467161761536, guid: 80ef753f4a036cc438a35436882cec76, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1

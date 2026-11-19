@@ -80,9 +80,6 @@ public class GameStateManager : MonoBehaviour
 
     private void MostrarAviso(string texto)
     {
-        if (MensagemUI.Instance != null)
-            MensagemUI.Mostrar(texto);
-        else
-            Debug.Log(texto);
+       
     }
 }

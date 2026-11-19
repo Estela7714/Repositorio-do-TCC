@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mansao_salao
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: mansao_salao
-  backgroundSprite: {fileID: 1085864138486324790, guid: d5f3501917ab8b24e9401fbeeed0b2fe, type: 3}
+  backgroundSprite: {fileID: 1085864138486324790, guid: 1feaf3d753527bb4a91a1665719d1b48, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1

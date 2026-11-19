@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a672e66197d76d3488f5d8b5954aeb4a, type: 3}
   m_Name: "\xCDm\xE3 com \xF3leo de maquina"
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemID: 
-  nomeItem: 
-  icone: {fileID: 0}
+  itemID: "\xCDm\xE3 com Olho de maquina"
+  nomeItem: "\xCDm\xE3 com Olho de maquina"
+  icone: {fileID: -8497546989449721307, guid: 863556d92b8a7ed459c6a7b6f82eecb7, type: 3}
   descricao: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mansao_quarto_dono
   m_EditorClassIdentifier: Assembly-CSharp::RoomData
   roomID: mansao_quarto_duque
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: -4935962307167944907, guid: dcd4afd1799315f45bc7fc91ee565aac, type: 3}
   minX: -7.5
   maxX: 7.5
   playerScale: 1

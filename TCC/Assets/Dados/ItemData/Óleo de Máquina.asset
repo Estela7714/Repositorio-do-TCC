@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a672e66197d76d3488f5d8b5954aeb4a, type: 3}
   m_Name: "\xD3leo de M\xE1quina"
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemID: 
+  itemID: "\xD3leo de M\xE1quina"
   nomeItem: "\xD3leo de M\xE1quina"
-  icone: {fileID: 0}
+  icone: {fileID: 2902247762373513879, guid: 7e1f0b1c6d812154bb6b9600c4e6c865, type: 3}
   descricao: 

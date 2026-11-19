@@ -162,4 +162,8 @@ public class RoomManager : MonoBehaviour
         Vector3 camPos = mainCamera.transform.position;
         backgroundRenderer.transform.position = new Vector3(camPos.x, camPos.y, backgroundRenderer.transform.position.z);
     }
+    public void EntrarPortaFrenteMansao()
+    {
+        LoadRoom("mansao_porta_frente", "vindo_portao");
+    }
 }

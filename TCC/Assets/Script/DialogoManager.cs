@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -23,11 +24,17 @@ public class DialogoManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textoFala;
     [SerializeField] private Image imagemRetrato; // Opcional
 
+    [Header("Configuração de Digitação")]
+    [Tooltip("Tempo em segundos entre cada letra (ex: 0.03 = rápido, 0.06 = mais devagar)")]
+    [SerializeField] private float velocidadeDigitacao = 0.04f;
+
     public static bool Aberto => Instance != null && Instance.painelDialogo != null && Instance.painelDialogo.activeSelf;
 
     private Queue<LinhaDialogo> filaFalas = new Queue<LinhaDialogo>();
     private Action aoTerminarCallback;
     private bool iniciouNesteFrame;
+    private bool digitando = false;
+    private Coroutine corrotinaDigitacao;
 
     private void Awake()
     {
@@ -48,6 +55,9 @@ public class DialogoManager : MonoBehaviour
             iniciouNesteFrame = false;
             return;
         }
+
+        // Bloqueia qualquer clique ou tecla enquanto as letras ainda estão aparecendo
+        if (digitando) return;
 
         // Avança o diálogo ao clicar com o botão esquerdo do mouse ou apertar Espaço
         bool clicou = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
@@ -78,6 +88,8 @@ public class DialogoManager : MonoBehaviour
 
     public void ProximaFala()
     {
+        if (digitando) return;
+
         if (filaFalas.Count == 0)
         {
             FecharDialogo();
@@ -89,18 +101,53 @@ public class DialogoManager : MonoBehaviour
         if (textoNome != null)
             textoNome.text = atual.nomeFalante;
 
-        if (textoFala != null)
-            textoFala.text = atual.fala;
-
         if (imagemRetrato != null)
         {
             imagemRetrato.gameObject.SetActive(atual.retrato != null);
             imagemRetrato.sprite = atual.retrato;
         }
+
+        if (corrotinaDigitacao != null)
+            StopCoroutine(corrotinaDigitacao);
+
+        corrotinaDigitacao = StartCoroutine(DigitarTexto(atual.fala));
+        if (textoNome != null)
+        {
+            bool temNome = !string.IsNullOrWhiteSpace(atual.nomeFalante);
+            textoNome.gameObject.SetActive(temNome);
+            textoNome.text = atual.nomeFalante;
+        }
+    }
+
+    private IEnumerator DigitarTexto(string fraseCompleta)
+    {
+        digitando = true;
+
+        if (textoFala != null)
+        {
+            textoFala.text = fraseCompleta;
+            textoFala.maxVisibleCharacters = 0;
+
+            int totalCaracteres = fraseCompleta.Length;
+            for (int i = 1; i <= totalCaracteres; i++)
+            {
+                textoFala.maxVisibleCharacters = i;
+                yield return new WaitForSeconds(velocidadeDigitacao);
+            }
+        }
+
+        digitando = false;
     }
 
     private void FecharDialogo()
     {
+        if (corrotinaDigitacao != null)
+        {
+            StopCoroutine(corrotinaDigitacao);
+            corrotinaDigitacao = null;
+        }
+
+        digitando = false;
         painelDialogo.SetActive(false);
         aoTerminarCallback?.Invoke();
         aoTerminarCallback = null;

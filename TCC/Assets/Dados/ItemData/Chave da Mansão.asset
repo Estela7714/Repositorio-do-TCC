@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a672e66197d76d3488f5d8b5954aeb4a, type: 3}
   m_Name: "Chave da Mans\xE3o"
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemID: Chave
+  itemID: chave_mansao
   nomeItem: "Chave antiga da mans\xE3o"
-  icone: {fileID: 0}
+  icone: {fileID: 2693657049608684734, guid: 2bee3716cfc8af645af10c817a4e1091, type: 3}
   descricao: 

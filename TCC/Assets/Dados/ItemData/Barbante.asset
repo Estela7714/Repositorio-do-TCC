@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a672e66197d76d3488f5d8b5954aeb4a, type: 3}
   m_Name: Barbante
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemID: 
+  itemID: Barbante
   nomeItem: Barbante
-  icone: {fileID: 0}
+  icone: {fileID: 5770192747070676917, guid: 77708a4a3e71e9b42bdbaf4db57588f7, type: 3}
   descricao: 
