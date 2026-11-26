@@ -142,25 +142,21 @@ public class RoomManager : MonoBehaviour
         }
     }
 
+    [Header("Tamanho Fixo do Cenário (Independente de Monitor)")]
+    [Tooltip("Largura fixa em unidades do mundo que toda sala deve ter (ex: 19.2 para 1920px a 100 PPU).")]
+    [SerializeField] private float larguraFixaCenario = 19.2f;
+
     private void FitBackgroundToCamera()
     {
         Sprite sprite = backgroundRenderer.sprite;
-        if (sprite == null || mainCamera == null) return;
+        if (sprite == null) return;
 
-        float camHeight = mainCamera.orthographicSize * 2f;
-        float camWidth = camHeight * mainCamera.aspect;
-
-        Vector2 spriteSize = sprite.bounds.size;
-
-        float scaleX = camWidth / spriteSize.x;
-        float scaleY = camHeight / spriteSize.y;
-
-        float scale = preencherTela ? Mathf.Max(scaleX, scaleY) : Mathf.Min(scaleX, scaleY);
-
+        // Mantém sempre a MESMA escala do cenário em qualquer PC/resolução
+        float scale = larguraFixaCenario / sprite.bounds.size.x;
         backgroundRenderer.transform.localScale = new Vector3(scale, scale, 1f);
 
-        Vector3 camPos = mainCamera.transform.position;
-        backgroundRenderer.transform.position = new Vector3(camPos.x, camPos.y, backgroundRenderer.transform.position.z);
+        // Trava o cenário sempre no centro exato do mundo (0, 0)
+        backgroundRenderer.transform.position = new Vector3(0f, 0f, backgroundRenderer.transform.position.z);
     }
     public void EntrarPortaFrenteMansao()
     {
