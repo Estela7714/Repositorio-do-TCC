@@ -17,7 +17,7 @@ MonoBehaviour:
   minX: -8.5
   maxX: 8.5
   playerScale: 0.9
-  usarCustomY: 0
+  usarCustomY: 1
   playerY: -0.88
   spawnPoints:
   - key: esquerda
@@ -26,8 +26,8 @@ MonoBehaviour:
     xPosition: 6
   - key: meio
     xPosition: -5
-  - key: porta_para_dentro
-    xPosition: 0
+  - key: vindo_quarto
+    xPosition: -4.56
   transitions:
   - triggerX: 7.5
     range: 1.5

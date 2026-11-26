@@ -17,7 +17,7 @@ MonoBehaviour:
   minX: -8.5
   maxX: 8.5
   playerScale: 1
-  usarCustomY: 0
+  usarCustomY: 1
   playerY: -2.5
   spawnPoints:
   - key: vindo_portao

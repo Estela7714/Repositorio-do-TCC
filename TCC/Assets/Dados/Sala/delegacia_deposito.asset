@@ -17,7 +17,7 @@ MonoBehaviour:
   minX: -8.5
   maxX: 8.5
   playerScale: 1
-  usarCustomY: 0
+  usarCustomY: 1
   playerY: -2.5
   spawnPoints:
   - key: porta_recepcao
@@ -26,6 +26,6 @@ MonoBehaviour:
   - triggerX: 7.5
     range: 1.5
     targetRoomID: delegacia_recepcao
-    targetSpawnKey: porta_interna
+    targetSpawnKey: vindo_deposito
     customKey: 0
     description: 

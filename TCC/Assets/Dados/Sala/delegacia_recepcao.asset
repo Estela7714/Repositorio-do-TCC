@@ -17,11 +17,13 @@ MonoBehaviour:
   minX: -8.5
   maxX: 8.5
   playerScale: 1
-  usarCustomY: 0
+  usarCustomY: 1
   playerY: -2.5
   spawnPoints:
   - key: porta_entrada
     xPosition: -6
+  - key: vindo_deposito
+    xPosition: 6.27
   transitions:
   - triggerX: -7.5
     range: 1.5
