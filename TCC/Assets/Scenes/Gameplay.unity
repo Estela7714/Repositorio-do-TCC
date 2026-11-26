@@ -1466,7 +1466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.30224216}
-  m_AnchoredPosition: {x: 103.91998, y: -85.09}
+  m_AnchoredPosition: {x: 103.91998, y: -85.09003}
   m_SizeDelta: {x: -207.85, y: -170.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223297027
@@ -1676,8 +1676,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 244.00012, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 325, y: 18}
+  m_SizeDelta: {x: 273.17, y: 51.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269907659
 MonoBehaviour:
@@ -1755,8 +1755,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3473896535395502889, guid: f94ce24d15f55d74387be69a9cc62ecd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2827,8 +2827,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -336, y: 8.2835}
+  m_SizeDelta: {x: 255.77, y: 47.953}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &375191539
 MonoBehaviour:
@@ -2906,8 +2906,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3473896535395502889, guid: f94ce24d15f55d74387be69a9cc62ecd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4022,7 +4022,7 @@ Transform:
   m_GameObject: {fileID: 558522385}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1061, y: -206, z: 0}
+  m_LocalPosition: {x: -834, y: -201, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4362,7 +4362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &662847066
 Transform:
   m_ObjectHideFlags: 0
@@ -5781,8 +5781,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3473896535395502889, guid: f94ce24d15f55d74387be69a9cc62ecd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5866,7 +5866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 12, y: -195}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045198887
@@ -5985,6 +5985,7 @@ GameObject:
   - component: {fileID: 1065676538}
   - component: {fileID: 1065676537}
   - component: {fileID: 1065676536}
+  - component: {fileID: 1065676539}
   m_Layer: 0
   m_Name: amuleto_olho
   m_TagString: Untagged
@@ -6136,6 +6137,18 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.010941029}
   m_Radius: 2.1302004
+--- !u!114 &1065676539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065676534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6526a6d7e71e90e4a95b8252fa87f346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AmuletoAltar
 --- !u!1 &1072640507
 GameObject:
   m_ObjectHideFlags: 0
@@ -7166,7 +7179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1182828838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7476,8 +7489,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 8.629999}
+  m_SizeDelta: {x: 252.03, y: 47.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218534873
 MonoBehaviour:
@@ -7555,8 +7568,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3473896535395502889, guid: f94ce24d15f55d74387be69a9cc62ecd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8296,7 +8309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -196, y: 18}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1366358824
@@ -8988,7 +9001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 533, y: 294}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483068208
@@ -9840,7 +9853,7 @@ Transform:
   m_GameObject: {fileID: 1612180482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.012513639, w: 0.99992174}
-  m_LocalPosition: {x: -249.6, y: -32.4, z: 0}
+  m_LocalPosition: {x: -257, y: -25, z: 0}
   m_LocalScale: {x: 52.3908, y: 52.3908, z: 52.3908}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9891,8 +9904,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -1070965023
-  m_SortingLayer: 2
+  m_SortingLayerID: -1485604515
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3468757604724670281, guid: 23350d09aef8f4d4da2e8b5ce8c5c79d, type: 3}
@@ -10462,6 +10475,7 @@ GameObject:
   - component: {fileID: 1710391912}
   - component: {fileID: 1710391911}
   - component: {fileID: 1710391910}
+  - component: {fileID: 1710391913}
   m_Layer: 0
   m_Name: amuleto_cranio
   m_TagString: Untagged
@@ -10613,6 +10627,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1710391913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710391908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6526a6d7e71e90e4a95b8252fa87f346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AmuletoAltar
 --- !u!1 &1732682576
 GameObject:
   m_ObjectHideFlags: 0
@@ -10895,6 +10921,7 @@ GameObject:
   - component: {fileID: 1755303151}
   - component: {fileID: 1755303150}
   - component: {fileID: 1755303149}
+  - component: {fileID: 1755303152}
   m_Layer: 0
   m_Name: amuleto_espiral
   m_TagString: Untagged
@@ -11046,6 +11073,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1755303152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755303147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6526a6d7e71e90e4a95b8252fa87f346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AmuletoAltar
 --- !u!1 &1765010259
 GameObject:
   m_ObjectHideFlags: 0
@@ -11063,7 +11102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1765010260
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11082,7 +11121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 112.94, y: -495.65002}
+  m_AnchoredPosition: {x: 112.94, y: -495.64996}
   m_SizeDelta: {x: -258.15, y: -991.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1765010261
@@ -11995,6 +12034,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1755303152}
+        m_TargetAssemblyTypeName: AmuletoAltar, Assembly-CSharp
+        m_MethodName: MarcarAltarTocado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemNecessario: {fileID: 0}
   textoItemCorreto: 
   textoItemErrado: "Isso n\xE3o funciona aqui."
@@ -12118,7 +12169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 159, y: -83}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1975582573
@@ -12527,7 +12578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -364, y: -64}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031693554
