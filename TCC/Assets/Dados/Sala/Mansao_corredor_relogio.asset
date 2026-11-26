@@ -26,6 +26,8 @@ MonoBehaviour:
     xPosition: -5.5
   - key: direita
     xPosition: 6
+  - key: vindo_quarto_duque
+    xPosition: -5.5
   transitions:
   - triggerX: -7.3
     range: 0.6

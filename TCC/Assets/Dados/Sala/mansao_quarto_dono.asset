@@ -21,13 +21,11 @@ MonoBehaviour:
   playerY: -2.5
   spawnPoints:
   - key: porta_corredor
-    xPosition: 6
-  - key: estante_secreta
-    xPosition: 0.5
+    xPosition: 6.98
   transitions:
-  - triggerX: 2.2
+  - triggerX: 6.98
     range: 1.5
     targetRoomID: mansao_corredor_relogio
-    targetSpawnKey: porta_duque
+    targetSpawnKey: vindo_quarto_duque
     customKey: 0
     description: 
