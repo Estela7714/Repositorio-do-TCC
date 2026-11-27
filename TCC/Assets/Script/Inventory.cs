@@ -46,6 +46,17 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void LimparTudo()
+    {
+        if (itens.Count == 0 && ItemSelecionado == null) return;
+
+        itens.Clear();
+        ItemSelecionado = null;
+
+        OnSelecaoMudou?.Invoke();
+        OnInventarioMudou?.Invoke();
+    }
+
     // Clicar no mesmo item desmarca; clicar em outro tenta combinar primeiro
     public void Selecionar(ItemData item)
     {
@@ -102,8 +113,6 @@ public class Inventory : MonoBehaviour
                 OnInventarioMudou?.Invoke();
                 OnSelecaoMudou?.Invoke();
                 return true;
-               
-               
             }
         }
 

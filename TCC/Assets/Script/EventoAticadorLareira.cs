@@ -26,12 +26,12 @@ public class EventoAticadorLareira : MonoBehaviour
     public string spawnKeyFrenteMansao = "vindo_portao";
 
     [Header("Configuração de Tempo")]
-    public float tempoLimite = 15f;
+    public float tempoLimite = 25f;
     public TextMeshProUGUI textoCronometro;
 
     [Header("Mensagens")]
     [TextArea] public string mensagemInicio = "Ouvi um estalo vindo da lareira! Preciso ir rápido antes que trave!";
-    [TextArea] public string mensagemFalha = "Demorei demais! Uma força estranha me expulsou para a frente da mansão...";
+    [TextArea] public string mensagemFalha = "Demorei demais! Uma força estranha me expulsou para a frente da mansão e perdi meus itens...";
 
     [Header("Eventos Extras")]
     public UnityEvent onEventoIniciado;
@@ -41,6 +41,9 @@ public class EventoAticadorLareira : MonoBehaviour
     private float tempoRestante = 0f;
     private bool eventoAtivo = false;
     private bool eventoConcluido = false;
+
+    public bool EventoConcluido => eventoConcluido;
+    public bool EventoAtivo => eventoAtivo;
 
     private void Awake()
     {
@@ -55,7 +58,10 @@ public class EventoAticadorLareira : MonoBehaviour
     private void Start()
     {
         if (textoCronometro != null)
+        {
+            textoCronometro.text = "";
             textoCronometro.gameObject.SetActive(false);
+        }
 
         if (imagemRapidaUI != null)
             imagemRapidaUI.SetActive(false);
@@ -67,17 +73,23 @@ public class EventoAticadorLareira : MonoBehaviour
     private void Update()
     {
         if (!eventoAtivo || eventoConcluido) return;
-        if (DialogoManager.Aberto) return;
+
+        // Pausa o cronômetro enquanto o jogador lê diálogos ou mensagens na tela
+        if (DialogoManager.Aberto || MensagemUI.Aberta) return;
 
         tempoRestante -= Time.deltaTime;
-
-        if (textoCronometro != null)
-            textoCronometro.text = $"Tempo: {Mathf.Max(0f, tempoRestante):F1}s";
+        AtualizarTextoCronometro();
 
         if (tempoRestante <= 0f)
         {
             FalharEvento();
         }
+    }
+
+    private void AtualizarTextoCronometro()
+    {
+        if (textoCronometro != null)
+            textoCronometro.text = $"Tempo: {Mathf.Max(0f, tempoRestante):F1}s";
     }
 
     public void IniciarEvento()
@@ -97,7 +109,10 @@ public class EventoAticadorLareira : MonoBehaviour
             aticadorInteragivel.DefinirTipo(TipoInteracao.Coletar);
 
         if (textoCronometro != null)
+        {
+            AtualizarTextoCronometro(); // Define "Tempo: 25.0s" imediatamente, evitando "New Text"
             textoCronometro.gameObject.SetActive(true);
+        }
 
         if (!string.IsNullOrEmpty(mensagemInicio))
             MensagemUI.Mostrar(mensagemInicio);
@@ -139,6 +154,12 @@ public class EventoAticadorLareira : MonoBehaviour
     {
         eventoAtivo = false;
         tempoRestante = 0f;
+
+        // Remove todos os itens do inventário
+        if (Inventory.Instance != null)
+        {
+            Inventory.Instance.LimparTudo();
+        }
 
         // Reseta o atiçador para Examinar ("Isso pode ser útil...")
         if (aticadorInteragivel != null)

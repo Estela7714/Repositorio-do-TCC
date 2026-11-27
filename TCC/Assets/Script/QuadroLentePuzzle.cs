@@ -31,10 +31,15 @@ public class QuadroLentePuzzle : MonoBehaviour
             painelQuadroRevelado.SetActive(false);
     }
 
-    // Ligue este método no 'Ao Interagir ()' do ObjetoInteragivel do Quadro
+    // Ligue este método no 'Ao Interagir ()' ou 'Ao Usar Item Correto ()' do ObjetoInteragivel do Quadro
     public void InteragirComQuadro()
     {
-        // Se você ainda não pegou o atiçador e não tem a lente, deixa o evento da lareira falar sozinho
+        // Trava: enquanto o evento da lareira não estiver completo, ignora a lente para o evento da lareira ir primeiro
+        if (EventoAticadorLareira.Instance != null && !EventoAticadorLareira.Instance.EventoConcluido)
+        {
+            return;
+        }
+
         bool possuiLente = Inventory.Instance != null
                            && itemLenteVermelha != null
                            && Inventory.Instance.Possui(itemLenteVermelha.itemID);

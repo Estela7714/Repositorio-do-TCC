@@ -23,10 +23,10 @@ MonoBehaviour:
   - key: porta_entrada
     xPosition: 6
   - key: escada_cima
-    xPosition: 0
+    xPosition: 4.2
   transitions:
-  - triggerX: 0
-    range: 1.5
+  - triggerX: 4.2
+    range: 0.8
     targetRoomID: mansao_corredor_relogio
     targetSpawnKey: escada_salao
     customKey: 0

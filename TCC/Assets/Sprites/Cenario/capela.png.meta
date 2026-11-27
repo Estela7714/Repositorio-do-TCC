@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 889fa5f54d2cae84984f167f70a812c0
+guid: 0c1af548d4d7d854dafe08c687e36cef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5414865023195059355
-    second: _storage_emulated_0_Download_Gemini_Generated_Image_31cbpu31cbpu31cb_0
+      213: 8609162906971733900
+    second: capela_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,7 +178,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _storage_emulated_0_Download_Gemini_Generated_Image_31cbpu31cbpu31cb_0
+      name: capela_0
       rect:
         serializedVersion: 2
         x: 0
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b949a36ac07752b40800000000000000
-      internalID: 5414865023195059355
+      spriteID: c8ff483fc04e97770800000000000000
+      internalID: 8609162906971733900
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      _storage_emulated_0_Download_Gemini_Generated_Image_31cbpu31cbpu31cb_0: 5414865023195059355
+      capela_0: 8609162906971733900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
