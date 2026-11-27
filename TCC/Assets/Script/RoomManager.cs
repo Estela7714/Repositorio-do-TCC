@@ -28,6 +28,16 @@ public class RoomManager : MonoBehaviour
     [Header("Objetos Interagíveis por Sala")]
     [SerializeField] private List<SalaObjetos> objetosDasSalas;
 
+    [Header("Bloqueio Antes de Falar com a Atendente")]
+    [TextArea(2, 4)]
+    [SerializeField] private string mensagemBloqueioAtendente = "Melhor falar com a atendente da pousada primeiro antes de sair explorando a cidade.";
+
+    [Header("Bloqueio da Delegacia (Dia 1)")]
+    [Tooltip("Coloque o Target Room ID exato da delegacia configurado no RoomData.")]
+    [SerializeField] private string idSalaDelegacia = "delegacia";
+    [TextArea(2, 4)]
+    [SerializeField] private string mensagemBloqueioDelegacia = "A delegacia está fechada esta noite. Melhor voltar amanhã.";
+
     private Dictionary<string, RoomData> roomDatabase = new Dictionary<string, RoomData>();
     private RoomData currentRoom;
     private PlayerMovement playerMovement;
@@ -77,6 +87,22 @@ public class RoomManager : MonoBehaviour
                     if (MansaoStateManager.Instance != null &&
                         MansaoStateManager.Instance.EstaBloqueadoNaPortaPrincipal(currentRoom.roomID, playerX))
                     {
+                        break;
+                    }
+
+                    // Impede ir para a praça ou para o beco antes de falar com a atendente da pousada
+                    if (!BloqueioAtendentePousada.jaFalouComAtendente &&
+                        (transition.targetRoomID == "praca_central" || transition.targetRoomID == "beco_escuro"))
+                    {
+                        MensagemUI.Mostrar(mensagemBloqueioAtendente);
+                        break;
+                    }
+
+                    // Impede ir para a delegacia antes do Dia 2
+                    if (transition.targetRoomID == idSalaDelegacia &&
+                        (GameStateManager.Instance == null || GameStateManager.Instance.etapaDoDia < 2))
+                    {
+                        MensagemUI.Mostrar(mensagemBloqueioDelegacia);
                         break;
                     }
 

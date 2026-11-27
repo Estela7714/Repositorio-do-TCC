@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -683.63, y: 55.384}
+  m_AnchoredPosition: {x: -668, y: 55}
   m_SizeDelta: {x: 345.1, y: 45.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2365907
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40.5
+  m_fontSizeBase: 40.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -456,6 +456,97 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.3099914, y: 1.4001089}
   m_EdgeRadius: 0
+--- !u!1 &18873195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18873196}
+  - component: {fileID: 18873198}
+  - component: {fileID: 18873197}
+  m_Layer: 0
+  m_Name: Bloqueio_Beco
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &18873196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18873195}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 398, y: 182, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2125359382}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &18873197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18873195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96870dac6b4fb18498f2e9fe0671923c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BloqueioAtendentePousada
+--- !u!61 &18873198
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18873195}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 191.6665, y: 257.62967}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 483.333, y: 615.25934}
+  m_EdgeRadius: 0
 --- !u!1 &21794631
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +578,162 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1538420531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &22540234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 22540235}
+  - component: {fileID: 22540237}
+  - component: {fileID: 22540236}
+  - component: {fileID: 22540238}
+  m_Layer: 5
+  m_Name: ContadorDias
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &22540235
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22540234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 502787345}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 285.15, y: 79.9}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &22540236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22540234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294309365
+  m_fontColor: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 41.3
+  m_fontSizeBase: 41.3
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &22540237
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22540234}
+  m_CullTransparentMesh: 1
+--- !u!114 &22540238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22540234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb25db7a4975774395366a137f98545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ContadorDiasUI
+  textoDia: {fileID: 22540236}
+  nomesEtapas:
+  - 
+  - Dia 1 - Noite
+  - Dia 2 - Tarde
+  - Dia 2 - Noite
 --- !u!1 &48526865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,7 +1694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &223297026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1466,8 +1713,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.30224216}
-  m_AnchoredPosition: {x: 103.91998, y: -85.09003}
-  m_SizeDelta: {x: -207.85, y: -170.18}
+  m_AnchoredPosition: {x: 92.04999, y: -71.19}
+  m_SizeDelta: {x: -184.11, y: -142.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223297027
 MonoBehaviour:
@@ -3346,6 +3593,206 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &451247796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 451247797}
+  - component: {fileID: 451247800}
+  - component: {fileID: 451247799}
+  - component: {fileID: 451247798}
+  m_Layer: 0
+  m_Name: NPC_MocaBonita (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &451247797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451247796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 667, y: 70, z: 0}
+  m_LocalScale: {x: 44.2095, y: 44.2095, z: 44.2095}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1026268581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &451247798
+SpriteRenderer:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451247796}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: -1070965023
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 857462052451612560, guid: 2075139d3eef492428d3618cdc17aa4c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.94, y: 10.94}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
+--- !u!114 &451247799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451247796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fbcc110e764dd4f931fbcc40372e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteragivel
+  falas:
+  - nomeFalante: Senhora
+    retrato: {fileID: 0}
+    fala: "Voc\xEA voltou, rapaz... e pelo jeito em que olha para o alto da colina,
+      j\xE1 viu o cadeado no port\xE3o de ferro."
+  - nomeFalante: "Mercen\xE1rio"
+    retrato: {fileID: 0}
+    fala: "Uma tranca da pol\xEDcia para manter curiosos longe. O que realmente aconteceu
+      l\xE1 dentro para selarem o lugar daquele jeito?"
+  - nomeFalante: Senhora
+    retrato: {fileID: 0}
+    fala: "O velho dono se perdeu na pr\xF3pria obsess\xE3o... e deixou para tr\xE1s
+      um lugar que recusa o passar do tempo. L\xE1 dentro, as velas nunca se apagam
+      de verdade e o sal\xE3o continua quente, esperando por visitas."
+  - nomeFalante: "Mercen\xE1rio"
+    retrato: {fileID: 0}
+    fala: "Voc\xEA fala como se j\xE1 tivesse entrado l\xE1."
+  - nomeFalante: Senhora
+    retrato: {fileID: 0}
+    fala: "Eu? Sou apenas uma senhora que ouve o vento soprar da colina... mas vejo
+      nos seus olhos que um peda\xE7o de ferro n\xE3o vai bastar para deter algu\xE9m
+      como voc\xEA."
+  - nomeFalante: Senhora
+    retrato: {fileID: 0}
+    fala: Afinal, quando a noite cai, a guarda desta cidade costuma dormir pesado...
+      e portas trancadas sempre cedem para quem tem coragem de tomar o que precisa.
+  - nomeFalante: "Mercen\xE1rio"
+    retrato: {fileID: 0}
+    fala: "(Pensamento) Simp\xE1tica demais para falar desse jeito... Mas ela tem
+      raz\xE3o. A noite j\xE1 caiu \u2014 \xE9 a hora perfeita para fazer uma visita
+      \xE0 delegacia."
+  aoTerminarConversa:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1138823641}
+        m_TargetAssemblyTypeName: DialogoAutomaticoRefeitorio, Assembly-CSharp
+        m_MethodName: LiberarEventoRefeitorio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  mensagemSemMaisNada: "Ela ajeita a postura e sorri docemente para voc\xEA, com
+    os olhos fixos na dire\xE7\xE3o da colina."
+--- !u!61 &451247800
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451247796}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.035757422, y: 0.23242569}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.94, y: 10.94}
+    newSize: {x: 4.94, y: 10.94}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.219407, y: 11.477003}
+  m_EdgeRadius: 0
 --- !u!1 &458687695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,6 +3938,7 @@ RectTransform:
   - {fileID: 531150362}
   - {fileID: 775104784}
   - {fileID: 577909966}
+  - {fileID: 22540235}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4022,7 +4470,7 @@ Transform:
   m_GameObject: {fileID: 558522385}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -834, y: -201, z: 0}
+  m_LocalPosition: {x: -599, y: -201, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4043,6 +4491,7 @@ MonoBehaviour:
   mensagemBloqueio: "Melhor n\xE3o ir para esses lados  agora. Est\xE1 muito escuro
     j\xE1, melhor ir para posada"
   intervaloMensagem: 2.5
+  bloquearParaDireita: 0
 --- !u!61 &558522388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4073,7 +4522,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -4087,7 +4536,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.0934057, y: 10.603342}
+  m_Size: {x: 5.2, y: 10.603342}
   m_EdgeRadius: 0
 --- !u!1 &577909962
 GameObject:
@@ -4207,7 +4656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 96.765015, y: -983.12}
+  m_AnchoredPosition: {x: 104, y: -878}
   m_SizeDelta: {x: 193.53, y: 193.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &614036929
@@ -4362,7 +4811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &662847066
 Transform:
   m_ObjectHideFlags: 0
@@ -4962,6 +5411,198 @@ RectTransform:
   m_AnchoredPosition: {x: 1.7, y: -66.068}
   m_SizeDelta: {x: 1102.2, y: 635.3369}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &789918512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789918513}
+  - component: {fileID: 789918516}
+  - component: {fileID: 789918515}
+  - component: {fileID: 789918514}
+  m_Layer: 0
+  m_Name: NPC_MoradoresBeco (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &789918513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789918512}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 223, y: 252, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 904563039}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &789918514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789918512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fbcc110e764dd4f931fbcc40372e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteragivel
+  falas:
+  - nomeFalante: "B\xEAbado 1"
+    retrato: {fileID: 0}
+    fala: "*hic*... Voc\xEA soube? Mais um sumiu ontem perto daquela maldita mans\xE3o.
+      J\xE1 perdi as contas de quantos desapareceram nessa cidade..."
+  - nomeFalante: "B\xEAbado 2"
+    retrato: {fileID: 0}
+    fala: "Cala a boca  logo! N\xE3o fala dessa casa em voz alta, d\xE1 azar. Ainda
+      bem que trancaram aquele port\xE3o de ferro."
+  - nomeFalante: "B\xEAbado 1"
+    retrato: {fileID: 0}
+    fala: "Trancaram nada... a guarda da delegacia confiscou a chave do port\xE3o
+      depois do \xFAltimo sumi\xE7o. Eu vi ela pendurada bem no cinto dela hoje mais
+      cedo."
+  - nomeFalante: "B\xEAbado 2"
+    retrato: {fileID: 0}
+    fala: "Pois que fique l\xE1! Nem por todo o dinheiro do mundo eu chego perto
+      daquela mans\xE3o \xE0 noite... Vamos embora antes que alguma coisa pegue a
+      gente aqui nesse beco."
+  - nomeFalante: "Mercen\xE1rio"
+    retrato: {fileID: 0}
+    fala: "\"Pensamento\" A chave da mans\xE3o est\xE1 no cinto da guarda, na delegacia.
+      Melhor descansar na pousada esta noite e dar um jeito de pegar essa chave amanh\xE3."
+  aoTerminarConversa:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1532497957}
+        m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
+        m_MethodName: MarcarBeco
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  mensagemSemMaisNada: "Eles est\xE3o b\xEAbados demais e resmungando coisas sem
+    sentido sobre os desaparecidos. J\xE1 ouvi tudo o que precisava."
+--- !u!61 &789918515
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789918512}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -1.7399817, y: 0.030893326}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.44, y: 7.75}
+    newSize: {x: 2.44, y: 7.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 6.374384, y: 8.455309}
+  m_EdgeRadius: 0
+--- !u!212 &789918516
+SpriteRenderer:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789918512}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: -1070965023
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -317105265352774928, guid: d3bb190a53892594280eb4c0f1289cbd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.44, y: 7.75}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &821427332
 GameObject:
   m_ObjectHideFlags: 0
@@ -5633,6 +6274,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1477263007}
+  - {fileID: 789918513}
   m_Father: {fileID: 662847066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &924369602
@@ -5808,6 +6450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1026268581}
+  - component: {fileID: 1026268582}
   m_Layer: 0
   m_Name: 04_PracaCentral
   m_TagString: Untagged
@@ -5829,9 +6472,25 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1170898664}
+  - {fileID: 451247797}
   - {fileID: 558522386}
   m_Father: {fileID: 662847066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1026268582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026268580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d09c807b8f1ba94b926b9aec3c15877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControladorSenhoraPraca
+  senhoraDia1: {fileID: 1170898663}
+  senhoraSegundaNoite: {fileID: 1170898663}
+  etapaSegundaNoite: 3
 --- !u!1 &1045198885
 GameObject:
   m_ObjectHideFlags: 0
@@ -6808,9 +7467,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteragivel
   falas:
-  - nomeFalante: ???
+  - nomeFalante: Viajante
     retrato: {fileID: 0}
-    fala: algo
+    fala: "Dizem por a\xED que quem entra naquela casa no alto da colina sai de bolso
+      cheio... que o velho guardava uma fortuna trancada l\xE1 dentro."
+  - nomeFalante: Morador Antigo
+    retrato: {fileID: 0}
+    fala: "Coisa de gente que n\xE3o conhece esta terra. Metal brilhante nunca compra
+      o que mora naquelas paredes \u2014 moeda nenhuma paga a d\xEDvida daquela fam\xEDlia."
+  - nomeFalante: Morador Antigo
+    retrato: {fileID: 0}
+    fala: "As ra\xEDzes daquela casa s\xF3 bebem do que \xE9 puro... o pre\xE7o foi
+      pago em vida, muito antes de qualquer fechadura enferrujar."
+  - nomeFalante: Viajante
+    retrato: {fileID: 0}
+    fala: "Voc\xEA fala de um jeito estranho... Melhor deixar essa conversa para
+      l\xE1 antes que o jantar esfrie."
+  - nomeFalante: 
+    retrato: {fileID: 0}
+    fala: "N\xE3o entendi uma palavra do que esses dois estavan falando... (suspira)
+      parecia mais um monte de supersti\xE7\xE3o sem sentido. Melhor eu ir me deitar
+      logo."
   aoTerminarConversa:
     m_PersistentCalls:
       m_Calls:
@@ -7008,37 +7685,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteragivel
   falas:
-  - nomeFalante: A Mulher
+  - nomeFalante: Senhora
     retrato: {fileID: 0}
-    fala: "Cheguem mais perto, meu joven... Voc\xEAs j\xE1 ouviram o que aconteceu
-      naquela mans\xE3o no topo da colina?"
+    fala: "Chegue mais perto, meu jovem... Voc\xEA j\xE1 ouviu o que aconteceu naquela
+      mans\xE3o no topo da colina?"
   - nomeFalante: "Mercen\xE1rio"
     retrato: {fileID: 0}
     fala: "Todo mundo na cidade evita falar daquele lugar. O que h\xE1 de t\xE3o
       errado com essa mans\xE3o?"
-  - nomeFalante: A Mulher
+  - nomeFalante: Senhora
     retrato: {fileID: 0}
-    fala: "D\xE9cadas atr\xE1s... "
-  - nomeFalante: A Mulher
+    fala: "D\xE9cadas atr\xE1s..."
+  - nomeFalante: Senhora
     retrato: {fileID: 0}
-    fala: o antigo dono era obcecado que por ocultismo e magia.
-  - nomeFalante: A Mulher
+    fala: O antigo dono daquela casa vivia obcecado por ocultismo e artes proibidas.
+  - nomeFalante: Senhora
     retrato: {fileID: 0}
-    fala: " Em busca do poder supremo, ele sacrificou a pr\xF3pria irm\xE3 em um
-      ritual profano para satisfazer sua ganancia."
-  - nomeFalante: A Mulher
+    fala: "Em busca de um poder que nenhum homem deveria tocar, ele sacrificou a
+      pr\xF3pria irm\xE3 num ritual sombrio para alimentar sua gan\xE2ncia."
+  - nomeFalante: Senhora
     retrato: {fileID: 0}
     fala: Dizem que...
-  - nomeFalante: A Mulher
+  - nomeFalante: Senhora
     retrato: {fileID: 0}
-    fala: embora o homem tenha morrido logo depois...
-  - nomeFalante: A Mulher
+    fala: "Embora o homem tenha tido um fim tr\xE1gico logo depois..."
+  - nomeFalante: Senhora
     retrato: {fileID: 0}
-    fala: "os gritos de socorro da crian\xE7a ainda ecoam pelas paredes da mans\xE3o!!"
+    fala: "Os gritos de socorro da crian\xE7a ainda ecoam pelas paredes daquela mans\xE3o!"
   - nomeFalante: "Mercen\xE1rio"
     retrato: {fileID: 0}
-    fala: "Uma historia estranha de se ouvir... melhor voltar para pousada, est\xE1
-      ficando tarde"
+    fala: "(Pensamento) Hist\xF3rias de assombra\xE7\xE3o para espantar forasteiros...
+      Mas o nome daquela mans\xE3o n\xE3o sai da boca de ningu\xE9m nesta cidade."
   aoTerminarConversa:
     m_PersistentCalls:
       m_Calls:
@@ -7173,13 +7850,14 @@ GameObject:
   - component: {fileID: 1182828839}
   - component: {fileID: 1182828838}
   - component: {fileID: 1182828841}
+  - component: {fileID: 1182828842}
   m_Layer: 10
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1182828838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7314,6 +7992,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.157442, y: 7.4968367}
   m_EdgeRadius: 0
+--- !u!50 &1182828842
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182828837}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1215942881
 GameObject:
   m_ObjectHideFlags: 0
@@ -7941,8 +8646,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150.27, y: 0.00033569}
-  m_SizeDelta: {x: 1360.6, y: 89.078}
+  m_AnchoredPosition: {x: -165.72, y: 0.00033569}
+  m_SizeDelta: {x: 1391.49, y: 89.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1267795493
 MonoBehaviour:
@@ -8141,8 +8846,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.68, y: -13.651}
-  m_SizeDelta: {x: 1688.64, y: 92.63}
+  m_AnchoredPosition: {x: 39.11, y: -33.322}
+  m_SizeDelta: {x: 1793.7, y: 89.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1300203621
 MonoBehaviour:
@@ -8191,8 +8896,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.4
-  m_fontSizeBase: 25.4
+  m_fontSize: 32.1
+  m_fontSizeBase: 32.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8230,7 +8935,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 5.584656, y: 0, z: 0.9657593, w: 0}
+  m_margin: {x: 5.584656, y: -20.46907, z: 94.93317, w: 13.646034}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8409,7 +9114,7 @@ Transform:
   m_GameObject: {fileID: 1429165403}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1181, y: 162, z: 0}
+  m_LocalPosition: {x: 374, y: 294, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8688,8 +9393,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1477263007}
   - component: {fileID: 1477263010}
-  - component: {fileID: 1477263009}
-  - component: {fileID: 1477263008}
   m_Layer: 0
   m_Name: NPC_MoradoresBeco
   m_TagString: Untagged
@@ -8706,75 +9409,12 @@ Transform:
   m_GameObject: {fileID: 1477263006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -942, y: 270, z: 0}
+  m_LocalPosition: {x: -129, y: 258, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 904563039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1477263008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477263006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49fbcc110e764dd4f931fbcc40372e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCInteragivel
-  falas: []
-  aoTerminarConversa:
-    m_PersistentCalls:
-      m_Calls: []
-  mensagemSemMaisNada: "Parece que eu n\xE3o vou conseguir mais nada."
---- !u!61 &1477263009
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477263006}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 10, y: 10}
-  m_EdgeRadius: 0
 --- !u!212 &1477263010
 SpriteRenderer:
   serializedVersion: 3
@@ -8820,19 +9460,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1070965023
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -527777866377157886, guid: 7c923a08a1f95c34a91bf40b1b0fabcf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.54, y: 7.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &1479398668
@@ -9330,6 +9970,11 @@ MonoBehaviour:
     raiz: {fileID: 458687695}
   - roomID: mansao_capela
     raiz: {fileID: 1538420530}
+  mensagemBloqueioAtendente: Melhor ir para a pousada primeiro antes de sair explorando
+    a cidade.
+  idSalaDelegacia: rua_lojas
+  mensagemBloqueioDelegacia: "A delegacia est\xE1 fechada esta noite. Melhor voltar
+    amanh\xE3."
   larguraFixaCenario: 19.2
 --- !u!114 &1532497957
 MonoBehaviour:
@@ -10290,6 +10935,7 @@ GameObject:
   - component: {fileID: 1691127883}
   - component: {fileID: 1691127882}
   - component: {fileID: 1691127881}
+  - component: {fileID: 1691127884}
   m_Layer: 6
   m_Name: NPC_AtendentePousada
   m_TagString: Untagged
@@ -10325,14 +10971,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteragivel
   falas:
+  - nomeFalante: "Mercen\xE1rio"
+    retrato: {fileID: 0}
+    fala: "Boa noite. Acabei de chegar na cidade e preciso de um lugar para passar
+      a noite... e talvez alguma informa\xE7\xE3o, se n\xE3o for inc\xF4modo."
   - nomeFalante: Atendente
     retrato: {fileID: 0}
-    fala: "As refei\xE7\xF5es s\xE3o servidas no sal\xE3o. N\xE3o fique perambulando
-      \xE0 noite."
+    fala: "Seguindo reto voc\xEA d\xE1 no refeit\xF3rio; mais para dentro ficam os
+      quartos. N\xE3o fique perambulando perto da colina."
+  - nomeFalante: "Mercen\xE1rio"
+    retrato: {fileID: 0}
+    fala: "Perto da colina? Por qu\xEA? O que tem por l\xE1? "
+  - nomeFalante: Atendente
+    retrato: {fileID: 0}
+    fala: "N\xE3o me fa\xE7a repetir."
+  - nomeFalante: "Mercen\xE1rio"
+    retrato: {fileID: 0}
+    fala: "(Pensamento) Direta ao ponto... Melhor n\xE3o insistir nisso agora."
   - nomeFalante: "Mercen\xE1rio"
     retrato: {fileID: 0}
     fala: "S\xF3 estou de passagem pela cidade. Sabe me dizer se h\xE1 algum lugar
-      aberto para conseguir fazer algo a est\xE1 hora?"
+      aberto a est\xE1 hora?"
   - nomeFalante: Atendente
     retrato: {fileID: 0}
     fala: "N\xE3o me pagam para ser guia tur\xEDstico. Coma, durma e siga seu caminho
@@ -10347,6 +11006,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1532497957}
         m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
         m_MethodName: MarcarAtendente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1691127884}
+        m_TargetAssemblyTypeName: BloqueioAtendentePousada, Assembly-CSharp
+        m_MethodName: LiberarCaminhos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10463,6 +11134,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1691127884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691127879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96870dac6b4fb18498f2e9fe0671923c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BloqueioAtendentePousada
 --- !u!1 &1710391908
 GameObject:
   m_ObjectHideFlags: 0
@@ -11121,8 +11804,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 112.94, y: -495.64996}
-  m_SizeDelta: {x: -258.15, y: -991.3}
+  m_AnchoredPosition: {x: 112.94, y: -461.67004}
+  m_SizeDelta: {x: -258.15, y: -1059.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1765010261
 MonoBehaviour:
@@ -12667,7 +13350,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteragivel
   nomeObjeto: Jornal velho
   tipo: 0
-  textoExaminar: 
+  textoExaminar: "AUTOS N\xBA 14-B \u2014 ARCHIVO: ...sem vest\xEDgios de combust\xE3o
+    ou cinzas nos aposentos principais. O titular da propriedade permanece desaparecido;
+    a \xFAnica evid\xEAncia recolhida no sal\xE3o foi um la\xE7o de c\xE2nhamo rompido
+    suspenso na viga mestra, sem sinais de queda ou luta. Port\xE3o lacrado por tempo
+    indeterminado."
   itemParaColetar: {fileID: 0}
   textoAoColetar: 
   aoInteragir:
@@ -12867,6 +13554,97 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044699558}
   m_CullTransparentMesh: 1
+--- !u!1 &2065191801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2065191802}
+  - component: {fileID: 2065191804}
+  - component: {fileID: 2065191803}
+  m_Layer: 0
+  m_Name: Bloqueio_Praca
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2065191802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065191801}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -179, y: 10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2125359382}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2065191803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065191801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96870dac6b4fb18498f2e9fe0671923c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BloqueioAtendentePousada
+--- !u!61 &2065191804
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065191801}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -112.5618, y: 259.8537}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 296.18555, y: 1098.82}
+  m_EdgeRadius: 0
 --- !u!1 &2075722171
 GameObject:
   m_ObjectHideFlags: 0
@@ -13288,7 +14066,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2065191802}
+  - {fileID: 18873196}
   m_Father: {fileID: 662847066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137350488

@@ -16,9 +16,9 @@ MonoBehaviour:
   backgroundSprite: {fileID: 3412988804798542454, guid: f11356473407f694193b7f77f965dea7, type: 3}
   minX: -8.5
   maxX: 8.5
-  playerScale: 1
+  playerScale: 0.7905
   usarCustomY: 1
-  playerY: -2.5
+  playerY: -0.26
   spawnPoints:
   - key: saida_cidade
     xPosition: 6

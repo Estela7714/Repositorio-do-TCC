@@ -28,7 +28,7 @@ MonoBehaviour:
   - triggerX: 8.5
     range: 1.5
     targetRoomID: entrada_cidade
-    targetSpawnKey: 
+    targetSpawnKey: esquerda
     customKey: 0
     description: 
   - triggerX: -7.5
