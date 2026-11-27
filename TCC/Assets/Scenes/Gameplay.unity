@@ -291,8 +291,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.3329, y: -15.334}
-  m_SizeDelta: {x: 433.0362, y: 433.03}
+  m_AnchoredPosition: {x: 6.16, y: 6.16}
+  m_SizeDelta: {x: 706.99, y: 706.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4303230
 MonoBehaviour:
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7344031574772027210, guid: 50a2c48e53e4a5d43bb333eec805b1a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 91e37590792a5614588bec77f80ac70d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -501,6 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96870dac6b4fb18498f2e9fe0671923c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BloqueioAtendentePousada
+  ignorarBarreiraNoEditor: 0
 --- !u!61 &18873198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -929,7 +930,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 12.64, y: 8.43}
+  m_Size: {x: 12, y: 8.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1636,8 +1637,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 45, y: 48.11499}
+  m_SizeDelta: {x: -937.33, y: -367.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213956019
 MonoBehaviour:
@@ -1652,7 +1653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1694,7 +1695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &223297026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1713,7 +1714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.30224216}
-  m_AnchoredPosition: {x: 92.04999, y: -71.19002}
+  m_AnchoredPosition: {x: 92.04993, y: -71.19003}
   m_SizeDelta: {x: -184.11, y: -142.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223297027
@@ -3745,6 +3746,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1532497957}
+        m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
+        m_MethodName: AvancarParaNoiteDia2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1532497961}
+        m_TargetAssemblyTypeName: ControleAcessoDelegacia, Assembly-CSharp
+        m_MethodName: MarcarFalouComSenhoraDia2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   mensagemSemMaisNada: "Ela ajeita a postura e sorri docemente para voc\xEA, com
     os olhos fixos na dire\xE7\xE3o da colina."
 --- !u!61 &451247800
@@ -3974,7 +3999,7 @@ MonoBehaviour:
   textoNome: {fileID: 2365907}
   textoFala: {fileID: 1300203621}
   imagemRetrato: {fileID: 0}
-  velocidadeDigitacao: -1.31
+  velocidadeDigitacao: 0.04
 --- !u!114 &502787348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5408,8 +5433,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.7, y: -66.068}
-  m_SizeDelta: {x: 1102.2, y: 635.3369}
+  m_AnchoredPosition: {x: -29.236, y: 61.009}
+  m_SizeDelta: {x: 2003.64, y: 1155.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &789918512
 GameObject:
@@ -6533,9 +6558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d09c807b8f1ba94b926b9aec3c15877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControladorSenhoraPraca
-  senhoraDia1: {fileID: 1170898663}
-  senhoraSegundaNoite: {fileID: 451247796}
-  etapaSegundaNoite: 3
 --- !u!114 &1026268583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6567,7 +6589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1045198886
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6584,8 +6606,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: -195}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -8, y: 82.6}
+  m_SizeDelta: {x: 82.71, y: 82.707}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045198887
 MonoBehaviour:
@@ -6710,7 +6732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1065676535
 Transform:
   m_ObjectHideFlags: 0
@@ -6719,13 +6741,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065676534}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1435.9, y: -60.26001, z: 8}
+  m_LocalRotation: {x: 0, y: -0.51764625, z: 0, w: 0.85559475}
+  m_LocalPosition: {x: 1435.9, y: -61.2, z: 14}
   m_LocalScale: {x: 10.44, y: 10.44, z: 10.44}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 324270928}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -62.349, z: 0}
 --- !u!212 &1065676536
 SpriteRenderer:
   serializedVersion: 3
@@ -6867,6 +6889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6526a6d7e71e90e4a95b8252fa87f346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AmuletoAltar
+  jaColetado: 0
 --- !u!1 &1072640507
 GameObject:
   m_ObjectHideFlags: 0
@@ -6895,13 +6918,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072640507}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.49224132, z: 0, w: 0.87045884}
-  m_LocalPosition: {x: -11.96, y: 473.64, z: -421.48}
-  m_LocalScale: {x: 52.03558, y: 57.77762, z: 0}
+  m_LocalRotation: {x: -0, y: -0.45023635, z: -0, w: 0.8929094}
+  m_LocalPosition: {x: 5.73, y: 476, z: 35.26}
+  m_LocalScale: {x: 37.980186, y: 57.77762, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2137350489}
-  m_LocalEulerAnglesHint: {x: 0, y: -58.976, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -53.518, z: 0}
 --- !u!61 &1072640509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6940,8 +6963,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.52, y: 7.49}
-    newSize: {x: 7.52, y: 7.49}
+    oldSize: {x: 8.58, y: 8.34}
+    newSize: {x: 8.58, y: 8.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -6974,7 +6997,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6995,14 +7018,14 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1070965023
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7344031574772027210, guid: 50a2c48e53e4a5d43bb333eec805b1a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50a2c48e53e4a5d43bb333eec805b1a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.52, y: 7.49}
+  m_Size: {x: 8.58, y: 8.34}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7302,8 +7325,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29.236, y: 4.3214}
-  m_SizeDelta: {x: 444.8976, y: 444.8976}
+  m_AnchoredPosition: {x: -102.54, y: 48.115}
+  m_SizeDelta: {x: 623.07, y: 623.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1131090840
 GameObject:
@@ -7953,7 +7976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d64cda6a704420341a3aef9d123751e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 5
+  speed: 3.15
 --- !u!212 &1182828839
 SpriteRenderer:
   serializedVersion: 3
@@ -9080,7 +9103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1366358823
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9097,8 +9120,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: 18}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -56.1, y: -19.9}
+  m_SizeDelta: {x: 81.26, y: 82.335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1366358824
 MonoBehaviour:
@@ -9701,8 +9724,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 533, y: 294}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -0.00000095367, y: 0}
+  m_SizeDelta: {x: 292.76, y: 292.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483068208
 MonoBehaviour:
@@ -9895,6 +9918,7 @@ GameObject:
   - component: {fileID: 1532497958}
   - component: {fileID: 1532497959}
   - component: {fileID: 1532497960}
+  - component: {fileID: 1532497961}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -10035,6 +10059,8 @@ MonoBehaviour:
   idSalaDelegacia: rua_lojas
   mensagemBloqueioDelegacia: "A delegacia est\xE1 fechada esta noite. Melhor voltar
     amanh\xE3."
+  mensagemBloqueioSenhoraDia2: "Preciso falar com a senhora antes de ir at\xE9 a
+    delegacia."
   larguraFixaCenario: 19.2
 --- !u!114 &1532497957
 MonoBehaviour:
@@ -10149,6 +10175,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1532497961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532497952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3146ebb0db3cd614985a2c3bb765a2f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControleAcessoDelegacia
 --- !u!1 &1532555083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11206,6 +11244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96870dac6b4fb18498f2e9fe0671923c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BloqueioAtendentePousada
+  ignorarBarreiraNoEditor: 1
 --- !u!1 &1710391908
 GameObject:
   m_ObjectHideFlags: 0
@@ -11225,7 +11264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1710391909
 Transform:
   m_ObjectHideFlags: 0
@@ -11382,6 +11421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6526a6d7e71e90e4a95b8252fa87f346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AmuletoAltar
+  jaColetado: 0
 --- !u!1 &1732682576
 GameObject:
   m_ObjectHideFlags: 0
@@ -11671,7 +11711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1755303148
 Transform:
   m_ObjectHideFlags: 0
@@ -11828,6 +11868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6526a6d7e71e90e4a95b8252fa87f346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AmuletoAltar
+  jaColetado: 0
 --- !u!1 &1765010259
 GameObject:
   m_ObjectHideFlags: 0
@@ -11864,7 +11905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 112.94, y: -461.67004}
+  m_AnchoredPosition: {x: 112.94006, y: -461.67004}
   m_SizeDelta: {x: -258.15, y: -1059.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1765010261
@@ -12247,8 +12288,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 324.85577, y: 110}
-  m_SizeDelta: {x: 48.2885, y: 30}
+  m_AnchoredPosition: {x: 298, y: 180}
+  m_SizeDelta: {x: 93.95, y: 58.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886678863
 MonoBehaviour:
@@ -12380,8 +12421,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 302, y: 170}
-  m_SizeDelta: {x: 56.7031, y: 37.2524}
+  m_AnchoredPosition: {x: 410.24, y: 296.73}
+  m_SizeDelta: {x: 102.87, y: 67.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895891794
 MonoBehaviour:
@@ -12730,7 +12771,7 @@ MonoBehaviour:
     colocado: 0
   consumirItensAoColocar: 1
   painelCloseUpPedestal: {fileID: 1966165605}
-  imagemPedestalUI: {fileID: 1966165606}
+  imagemPedestalUI: {fileID: 1483068208}
   spritePedestalVazio: {fileID: 5297650707887106277, guid: 649211f943697f7478e900fa347141cb, type: 3}
   spritePedestalCompleto: {fileID: 1117470966174315590, guid: 6a3da1b384fb07743ae06f181df5fa6d, type: 3}
   bloqueioEstante: {fileID: 1116091745}
@@ -12744,7 +12785,10 @@ MonoBehaviour:
   onEstanteAberta:
     m_PersistentCalls:
       m_Calls: []
-  amuletosParaRevelar: []
+  amuletosParaRevelar:
+  - {fileID: 1710391908}
+  - {fileID: 1755303147}
+  - {fileID: 1065676534}
 --- !u!114 &1964139452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12768,18 +12812,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1964139451}
         m_TargetAssemblyTypeName: EstanteSecretaPedestal, Assembly-CSharp
         m_MethodName: InteragirComPedestal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1755303152}
-        m_TargetAssemblyTypeName: AmuletoAltar, Assembly-CSharp
-        m_MethodName: MarcarAltarTocado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12848,7 +12880,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1966165608}
   - component: {fileID: 1966165607}
-  - component: {fileID: 1966165606}
   m_Layer: 5
   m_Name: PainelCloseUpPedestal
   m_TagString: Untagged
@@ -12856,36 +12887,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1966165606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966165605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 5297650707887106277, guid: 649211f943697f7478e900fa347141cb, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1966165607
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12912,8 +12913,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 159, y: -83}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 62.615005, y: 0}
+  m_SizeDelta: {x: 292.76, y: 292.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1975582573
 GameObject:
@@ -13304,7 +13305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2031693553
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13321,8 +13322,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -364, y: -64}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 56.1, y: -19.477}
+  m_SizeDelta: {x: 81.48, y: 81.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031693554
 MonoBehaviour:
@@ -13410,7 +13411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteragivel
   nomeObjeto: Jornal velho
   tipo: 0
-  textoExaminar: "AUTOS N\xBA 14-B \u2014 ARCHIVO: ...sem vest\xEDgios de combust\xE3o
+  textoExaminar: "AUTOS N\xBA 14-B \u2014 ARTIGO: ...sem vest\xEDgios de combust\xE3o
     ou cinzas nos aposentos principais. O titular da propriedade permanece desaparecido;
     a \xFAnica evid\xEAncia recolhida no sal\xE3o foi um la\xE7o de c\xE2nhamo rompido
     suspenso na viga mestra, sem sinais de queda ou luta. Port\xE3o lacrado por tempo
@@ -13659,6 +13660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96870dac6b4fb18498f2e9fe0671923c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BloqueioAtendentePousada
+  ignorarBarreiraNoEditor: 0
 --- !u!61 &2065191804
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14202,8 +14204,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 285, y: 189}
-  m_SizeDelta: {x: 56.7506, y: 30}
+  m_AnchoredPosition: {x: 425.65, y: 251.5}
+  m_SizeDelta: {x: 104.05, y: 55.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140976045
 MonoBehaviour:

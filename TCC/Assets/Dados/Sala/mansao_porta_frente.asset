@@ -16,9 +16,9 @@ MonoBehaviour:
   backgroundSprite: {fileID: 4010616195003162711, guid: 73efa425c619e91479486de54b0cbcba, type: 3}
   minX: -8.5
   maxX: 8.5
-  playerScale: 1
+  playerScale: 0.6761
   usarCustomY: 1
-  playerY: -2.5
+  playerY: -1.78
   spawnPoints:
   - key: vindo_portao
     xPosition: 0

@@ -16,9 +16,9 @@ MonoBehaviour:
   backgroundSprite: {fileID: -1723029536247211246, guid: fbabe3f934aad2844becd35fd3625345, type: 3}
   minX: -7.5
   maxX: 7.5
-  playerScale: 1
+  playerScale: 0.6833
   usarCustomY: 1
-  playerY: -2.5
+  playerY: -1.92
   spawnPoints:
   - key: esquerda
     xPosition: -6

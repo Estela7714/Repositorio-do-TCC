@@ -38,6 +38,10 @@ public class RoomManager : MonoBehaviour
     [TextArea(2, 4)]
     [SerializeField] private string mensagemBloqueioDelegacia = "A delegacia está fechada esta noite. Melhor voltar amanhã.";
 
+    [Header("Bloqueio da Delegacia (Antes de Falar com a Senhora no Dia 2)")]
+    [TextArea(2, 4)]
+    [SerializeField] private string mensagemBloqueioSenhoraDia2 = "Preciso falar com a senhora antes de ir até a delegacia.";
+
     private Dictionary<string, RoomData> roomDatabase = new Dictionary<string, RoomData>();
     private RoomData currentRoom;
     private PlayerMovement playerMovement;
@@ -103,6 +107,14 @@ public class RoomManager : MonoBehaviour
                         (GameStateManager.Instance == null || GameStateManager.Instance.etapaDoDia < 2))
                     {
                         MensagemUI.Mostrar(mensagemBloqueioDelegacia);
+                        break;
+                    }
+
+                    // Impede ir para a delegacia no Dia 2 antes de falar com a senhora
+                    if (transition.targetRoomID == idSalaDelegacia &&
+                        !ControleAcessoDelegacia.FalouComSenhoraDia2)
+                    {
+                        MensagemUI.Mostrar(mensagemBloqueioSenhoraDia2);
                         break;
                     }
 
@@ -184,10 +196,12 @@ public class RoomManager : MonoBehaviour
         // Trava o cenário sempre no centro exato do mundo (0, 0)
         backgroundRenderer.transform.position = new Vector3(0f, 0f, backgroundRenderer.transform.position.z);
     }
+
     public void EntrarPortaFrenteMansao()
     {
         LoadRoom("mansao_porta_frente", "vindo_portao");
     }
+
     public void EntrarEscritorioDuque()
     {
         LoadRoom("mansao_escritorio_duque", "esquerda");

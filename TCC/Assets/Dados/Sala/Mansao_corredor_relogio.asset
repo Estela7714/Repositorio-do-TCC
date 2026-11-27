@@ -16,9 +16,9 @@ MonoBehaviour:
   backgroundSprite: {fileID: -4009839269998335011, guid: 691ef54f713c505469c63fcdfe9e1d81, type: 3}
   minX: -8.5
   maxX: 8.5
-  playerScale: 1
+  playerScale: 0.6306
   usarCustomY: 1
-  playerY: -2.5
+  playerY: -1.8225
   spawnPoints:
   - key: escada_salao
     xPosition: -5.2
@@ -29,7 +29,7 @@ MonoBehaviour:
   - key: vindo_quarto_duque
     xPosition: -5.5
   transitions:
-  - triggerX: -7.3
+  - triggerX: -8
     range: 0.6
     targetRoomID: mansao_salao
     targetSpawnKey: escada_cima

@@ -35,6 +35,14 @@ public class GameStateManager : MonoBehaviour
     public void MarcarConversaMesa() => ouviuConversaMesaSalao = true;
     public void MarcarPortaoMansao() => visitouPortaoMansao = true;
     public void MarcarSenhoraTarde() => falouComSenhoraTarde = true;
+    public void AvancarParaNoiteDia2()
+    {
+        falouComSenhoraTarde = true;
+        if (etapaDoDia == 2)
+        {
+            AvancarEtapa("A noite cai sobre a cidade. Agora é a hora de invadir a delegacia...");
+        }
+    }
 
     // --- Método chamado ao clicar na Cama da Pousada ---
     public void TentarDormir()
