@@ -1713,7 +1713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.30224216}
-  m_AnchoredPosition: {x: 92.04999, y: -71.19}
+  m_AnchoredPosition: {x: 92.04999, y: -71.19002}
   m_SizeDelta: {x: -184.11, y: -142.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223297027
@@ -3611,7 +3611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &451247797
 Transform:
   m_ObjectHideFlags: 0
@@ -3733,9 +3733,9 @@ MonoBehaviour:
   aoTerminarConversa:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1138823641}
-        m_TargetAssemblyTypeName: DialogoAutomaticoRefeitorio, Assembly-CSharp
-        m_MethodName: LiberarEventoRefeitorio
+      - m_Target: {fileID: 1532497957}
+        m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
+        m_MethodName: MarcarSenhoraTarde
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3974,7 +3974,7 @@ MonoBehaviour:
   textoNome: {fileID: 2365907}
   textoFala: {fileID: 1300203621}
   imagemRetrato: {fileID: 0}
-  velocidadeDigitacao: 0.04
+  velocidadeDigitacao: -1.31
 --- !u!114 &502787348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5495,6 +5495,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 904563040}
+        m_TargetAssemblyTypeName: ControladorBeco, Assembly-CSharp
+        m_MethodName: MostrarPlayerNovamente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   mensagemSemMaisNada: "Eles est\xE3o b\xEAbados demais e resmungando coisas sem
     sentido sobre os desaparecidos. J\xE1 ouvi tudo o que precisava."
 --- !u!61 &789918515
@@ -6253,6 +6265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 904563039}
+  - component: {fileID: 904563040}
   m_Layer: 0
   m_Name: 05_BecoEscuro
   m_TagString: Untagged
@@ -6277,6 +6290,37 @@ Transform:
   - {fileID: 789918513}
   m_Father: {fileID: 662847066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &904563040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904563038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f1812ba8b61a847b082c248ffe0a95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControladorBeco
+  npcsBeco:
+  - {fileID: 1477263006}
+  - {fileID: 789918512}
+  objetoPlayer: {fileID: 1182828837}
+  onIniciarDialogoAutomatico:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 789918514}
+        m_TargetAssemblyTypeName: NPCInteragivel, Assembly-CSharp
+        m_MethodName: Conversar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &924369602
 GameObject:
   m_ObjectHideFlags: 0
@@ -6451,6 +6495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1026268581}
   - component: {fileID: 1026268582}
+  - component: {fileID: 1026268583}
   m_Layer: 0
   m_Name: 04_PracaCentral
   m_TagString: Untagged
@@ -6489,8 +6534,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControladorSenhoraPraca
   senhoraDia1: {fileID: 1170898663}
-  senhoraSegundaNoite: {fileID: 1170898663}
+  senhoraSegundaNoite: {fileID: 451247796}
   etapaSegundaNoite: 3
+--- !u!114 &1026268583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026268580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e48207591b1734e848c65f0d0c632e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControladorPraca
+  npcDia1: {fileID: 1170898663}
+  npcNoite2: {fileID: 451247796}
 --- !u!1 &1045198885
 GameObject:
   m_ObjectHideFlags: 0
@@ -7503,6 +7562,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1138823641}
+        m_TargetAssemblyTypeName: DialogoAutomaticoRefeitorio, Assembly-CSharp
+        m_MethodName: MostrarPlayerNovamente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   mensagemSemMaisNada: "Parece que eu n\xE3o vou conseguir mais nada."
 --- !u!61 &1138823639
 BoxCollider2D:
@@ -7722,6 +7793,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1138823641}
         m_TargetAssemblyTypeName: DialogoAutomaticoRefeitorio, Assembly-CSharp
         m_MethodName: LiberarEventoRefeitorio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1532497957}
+        m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
+        m_MethodName: MarcarLendaPraca
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9095,7 +9178,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1429165404}
-  - component: {fileID: 1429165406}
   - component: {fileID: 1429165405}
   - component: {fileID: 1429165407}
   m_Layer: 0
@@ -9132,52 +9214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5402817bd6bc4a845b9739ec8ef76779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CamaInteragivel
---- !u!61 &1429165406
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429165403}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!61 &1429165407
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9527,7 +9563,31 @@ MonoBehaviour:
   mensagemDestrancou: "Voc\xEA destrancou a passagem!"
   onInteragirTrancada:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1532497957}
+        m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
+        m_MethodName: MarcarPortaoMansao
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1026268583}
+        m_TargetAssemblyTypeName: ControladorPraca, Assembly-CSharp
+        m_MethodName: AtualizarNPCs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDestrancar:
     m_PersistentCalls:
       m_Calls:
